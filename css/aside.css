@@ -1,0 +1,13 @@
+aside {
+    height: 783px;
+    top:0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+.this {
+    font-size: 10px;
+}
+
+.menu-close-button {
+   float:right;
+}

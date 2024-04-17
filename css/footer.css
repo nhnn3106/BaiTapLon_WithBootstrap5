@@ -1,0 +1,37 @@
+
+.address-info {
+    font-size:13px;
+    color: grey;
+}
+.email {
+    color: black;
+}
+.email:hover {
+    color:#dc3545;
+}
+.footer-link {
+    color: black;
+    font-size: 13.5px;
+}
+.footer-link:hover {
+    color:#dc3545;
+}
+.shop-info {
+    font-size: 13px;
+}
+@media only screen and (max-width: 992px) {
+    
+}
+@media only screen and (max-width: 1400px) {
+}
+@media only screen and (max-width: 1200px) {
+    .none-visible-xl {
+        display:none;
+    }
+}
+@media only screen and (max-width:992px) {
+    
+}
+@media only screen and (min-width:768px) {
+
+}

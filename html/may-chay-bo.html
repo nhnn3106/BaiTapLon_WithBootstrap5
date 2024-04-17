@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Bootstrap5/css/bootstrap.min.css">
+    <script src="../Bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="../jquery-3.7.1/jquery.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/aside.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/header.js"></script>
+    <script src="../js/general.js"></script>
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="p-0 m-0 bg-body-secondary">
+    <header class="header container-fluid p-0 top-0 bg-white position-absolute z-1">
+        <nav class="top-header nav bg-danger p-0 justify-content-end">
+            <a href="../html/gioithieu.html" class="nav-link text-white">
+                Giới thiệu
+            </a>
+            <a href="../html/van-chuyen-thanh-toan.html" class="nav-link text-white">
+            Vận chuyển & Thanh toán
+            </a>
+            <a href="" class="nav-link text-white">
+                Dự án
+            </a>
+            <a href="" class="nav-link text-white">
+                Tư vấn mua hàng
+            </a>
+            <a href="" class="nav-link text-white">
+                Tin tức
+            </a>
+            <a href="" class="nav-link text-white">
+                Tuyển dụng
+            </a>
+            <a href="../html/lien-he.html" class="nav-link text-white me-5">
+                Liên hệ
+            </a>
+        </nav>
+        <div class="second-header bg-white container-fluid">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="p-2 w-25 d-flex flex-shrink-0 flex-grow-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Dụng Cụ Thể Thao - Cửa Hàng Thể Thao Uy Tìn, Giá Tốt">
+                    <a href="../index.html">
+                        <img class="logo img-fluid" src="../img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="p-2 d-flex flex-grow-1 flex-shrink-1">
+                    <div class="middle-section input-group">
+                        <input type="text" class="form-control w-auto d-flex flex-grow-1" placeholder="Từ khóa tìm kiếm...">
+                        <div class="tim-kiem-btn span input-group-text text-danger" role="button">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <span class="px-1">Tìm kiếm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section p-2 row">
+                    <div id="he-thong-cua-hang-btn" class="container col d-flex align-items-center" role="button">
+                        <div class="col h-100 p-0 m-0 d-flex align-items-center">
+                            <ion-icon class="fs-2 text-danger" name="location-sharp"></ion-icon>
+                        </div>
+                        <div class="col p-0 m-0">
+                            <div class="row fw-bold">Hệ thống</div>
+                            <div class="row fw-normal">Cửa hàng</div>
+                        </div>
+                    </div>
+                    <div class="container col" role="button">
+                        <a class="text-dark text-decoration-none" href="../html/gio-hang.html">
+                            <div class="d-flex align-items-center">
+                                <div class="col h-100 p-0 m-0 d-flex align-items-center">
+                                    <ion-icon class="fs-2 text-danger" name="cart"></ion-icon>
+                                </div>
+                                <div class="col p-0 m-0">
+                                    <div class="row fw-bold">Giỏ hàng</div>
+                                    <div class="row fw-normal">0đ</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-xs ms-5 visible-xs">
+                    <div class="search-btn rounded-3 visible-xs" role="button">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-list container-fluid border border-start-0 border-end-0">
+                <ul class="sub-menu-list nav container d-flex align-items-center my-0" style="font-size: 12.45px;">
+                    <li class="nav-item border-end">
+                        <a href="../index.html" class="nav-link text-danger">
+                            <ion-icon name="home"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            MÁY CHẠY BỘ
+                        </a>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            MÁY TẬP THỂ DỤC
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Xe Đạp Tập Thể Dục
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Máy Tập Cơ Bụng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Thiết Bị Phục Hồi Chức Năng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Xe Đạp Tập Thể Dục
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ VÕ THUẬT
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Đích Đá - Đích Đấm Boxing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Găng Tay Boxing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Trụ & Bao Cát Đấm Bốc
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Thiết Bị Bảo Hộ Võ Thuật
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Dụng Cụ Tập Thể Lực
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Côn Nhị Khúc
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ TẬP GYM
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Giàn Tạ Đa Năng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Ghế Tập Tạ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Xà Đơn - Xà Kép
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Tạ Tay - Tạ Đơn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Ghế Tập Bụng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Phụ Kiện Tập Gym
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ BÓNG BÀN
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Bàn Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Quả Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Lưới Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Vợt Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Cốt Vợt Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Mặt Vợt Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Máy Bắn Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Phụ Kiện Bóng Bàn
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            THIẾT BỊ DẠY HỌC
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Giáo Dục Thể Chất Thông Tư 38 39 40</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ NGOÀI TRỜI
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên HQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa (Trụ Đôi)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa (Trụ Đơn D140)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Chung Cư - Sân Vườn Vifa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa (Trụ Đơn D114)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Sodex Sport</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border-start">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DANH MỤC KHÁC
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Ghế Massage</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Tập Yoga <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Thảm Tập Yoga</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Bóng Tập Yoga</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Bàn Bi Lắc</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Phòng Gym <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Gym Impulse</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Đá</a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Quả Bóng Đá</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Khung Thành và Lưới Bóng Đá</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Phụ Kiện Bóng Đá</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Cầu Lông <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông Yonex</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Thảm Sân Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Dây Đan Vợt Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Quả Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông Proace</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông Tập Luyện</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Căng Vợt Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ - Lưới Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Bắn Cầu Lông</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href=../html/may-chay-bo.html"" class="nav-link text-white">Dụng Cụ Bóng Rổ</a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ - Vành - Lưới Bóng Rổ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Quả Bóng Rổ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Phụ Kiện Bóng Rổ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Chuyền <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Quả Bóng Chuyền</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ và Lưới Bóng Chuyền</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Phụ Kiện Bóng Chuyền</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Chày</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Tennis - Pickleball <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ Tennis - Lưới Tennis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Bóng Tennis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Pickleball Niupipo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Pickleball Boer Sport</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Bóng Pickleball</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ Lưới Pickleball</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Pickleball AMA Sport</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Pickleball</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bơi Lội <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Kính Bơi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Mũ Bơi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Bể Bơi - Phao Bơi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Cúp - Huy Chương - Kỷ Niệm Chương <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Cúp Thể Thao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Huy Chương Thể Thao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Cúp Pha Lê</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Cờ Lưu Niệm</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Tập Thể Dục Thẩm Mỹ</a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Thể Thao Adidas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ SVĐ - Nhà Thi Đấu <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Sàn Thể Thao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Ghế Khán Đài</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Bảng Điểm Thể Thao</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-xl container-xxl">
+            <p class="direction-line">
+                <a class="text-decoration-none text-secondary-emphasis" href="../index.html">Trang chủ</a> /
+                <a class="text-decoration-none text-secondary-emphasis" href="../html/may-chay-bo.html">Máy Chạy Bộ</a>
+            </p>
+        </div>
+        <div class="container-xl container-xxl p-0">
+            <div class="heading-picture p-0 m-0">
+                <img src="../img/may-chay-bo-tai-nha(1).jpg" alt="" style="width: 100%;">
+            </div>
+        </div>
+        <div class="container-xl container-xxl pt-3 p-0">
+            <div class="d-flex flex-row m-0 p-0">
+                <div class="bg-white px-0 me-4 d-flex flex-column flex-shrink-0" style="height: fit-content;">
+                    <p class="mt-2 mx-0 px-3 pb-2 border-bottom border-2 border-danger">Lọc:</p>
+                    <div class="mx-0 px-3 pb-2 border-bottom">
+                        <p class="fw-bold my-1 p-0">Sắp xếp <i class="float-end">-</i></p>
+                        <form action="">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Bán chạy nhất
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Sản phẩm mới
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Giá tăng dần
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    Giá giảm dần
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mx-0 px-3 pb-2 border-bottom">
+                        <p class="fw-bold my-1 p-0">Phân loại<i class="float-end">-</i></p>
+                        <form action="">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Đơn năng
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Đa năng
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mx-0 px-3 pb-2 border-bottom">
+                        <p class="fw-bold my-1 p-0">Phân loại<i class="float-end">-</i></p>
+                        <form action="">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Từ 5 - 10 triệu
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Từ 10 - 20 triệu
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Trên 40 triệu
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mx-0 px-3 pb-2 border-bottom">
+                        <p class="fw-bold my-1 p-0">Thương hiệu<i class="float-end">-</i></p>
+                        <form action="">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Mofit
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Adidas
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Sakura
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Reebok
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    HQ
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Oreni
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mx-0 px-3 pb-2 border-bottom">
+                        <p class="fw-bold my-1 p-0">Xuất xứ<i class="float-end">-</i></p>
+                        <form action="">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Trung Quốc
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Đài Loan
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="me-0 pe-0">
+                    <div class="bg-white pb-1">
+                        <div class="border-bottom">
+                            <div class="title-div bg-danger text-white fs-5 ps-4 py-2 w-25">
+                                MÁY CHẠY BỘ
+                            </div>
+                        </div>
+                        <div style="font-size: 14px;" class="mx-3 mt-3">
+                            <p style="text-align: justify;">
+                                Thiên Trường Sport cung cấp <b>máy chạy bộ chính hãng tốt nhất</b> hiện nay. Với gần 15 hoạt động trong lĩnh vực dụng cụ thể dục thể thao, chúng tôi tự tin là lựa chọn đúng đắn nhất cho bạn:
+                            </p>
+                            <p style="text-align: justify;">
+                                &#10004; Máy chạy bộ hiện đại, vận hành mạnh mẽ, đa chức năng, phù hợp mọi đối tượng sử dụng [<a href="">1</a>].
+                            </p>
+                            <p style="text-align: justify;">
+                                &#10004; Sản phẩm nhập trực tiếp từ nhà sản xuất, giá thành hợp lý, nhiều khuyến mại quà tặng hấp dẫn [<a href="">1</a>].
+                            </p>
+                            <p style="text-align: justify;">
+                                &#10004; Trực tiếp trải nghiệm chạy bộ tại hệ thống cửa hàng toàn quốc.
+                            </p>
+                            <p style="text-align: justify;">
+                                &#10004; Đặt hàng nhanh chóng qua hotline <a class="text-decoration-none fw-semibold" href="">0968650686</a>, tư vấn chuyên nghiệp tận tình.
+                            </p>
+                            <p style="text-align: justify;">
+                                &#10004; Bảo hành lên đến 1 năm, bảo trì sửa chữa tận nhà.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white mt-3">
+                        <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 m-0">
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex  justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white  position-absolute bg-danger">
+                                    <span>-35%</span>
+                                </div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-dien-da-nang-hq9900.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện đa năng HQ-9900">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện đa năng HQ-9900</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        32,900,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        21,450,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden"></div>
+                                <div class="container d-flex justify-content-centerr">
+                                    <img src="../img/may-chay-bo-HQV1C(1).jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện đa năng HQ-V1C">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện đa năng HQ-V1C</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        13,950,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-26%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/hinh-anh-may-chay-bo-sakura-s33.jpg" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện Sakura S33">
+                                </div>
+                                <div class="item-name text-center m-2">Trụ đấm bốc HuiJun HJ-G070</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        18,500,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        15,450,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-14%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-sakura-hq-v3c.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện Sakura HQ-V3C">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện Sakura HQ-V3C</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        18,500,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        15,850,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden"></div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-oreni-re-13(1).jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện đa năng Oreni RE-3">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện đa năng Oreni RE-3</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        16,500,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-10%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/May-chay-bo-dien-HQ-555-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện HQ 555">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện HQ 555</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        19,870,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        17,8750,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-9%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/May-chay-bo-dien-da-nang-HQ-V2C-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện đa năng HQ-V2C">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện đa năng HQ-V2C</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        20,500,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        18,680,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-12%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-dien-sakura-hq-666-1 (1).jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện Sakura HQ-666">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện Sakura HQ-666</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        21,550,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        18,975,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-14%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/hinh-anh-may-chay-bo-hq-9600-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện HQ 9600">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện HQ 9600</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        24,500,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        21,175,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-12%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/hinh-anh-may-chay-bo-dien-oreni-re-5.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện Oreni RE-5">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện Oreni RE-5</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        24,500,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        21,500,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden"></div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-hq-777-chinh-hang.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện HQ-777">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện HQ-777</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        23,250,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-20%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-oreni-re-7-gia-tot.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện Oreni RE-7">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện Oreni RE-7</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        24,500,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-17%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-dien-da-nang-HQ-9800-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ đa năng HQ-9800">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ đa năng HQ-9800</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        29,500,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        24,500,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-16%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/hinh-anh-may-chay-bo-dien-da-nang-oreni-re-6-1(1).jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện đa năng Oreni RE-6">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện đa năng Oreni RE-6</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        31,600,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        26,500,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden"></div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/hinh-anh-may-chay-bo-dien-da-nang-HQ-V6C-khi-gap-gon-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện đa năng HQ-V6C">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện đa năng HQ-V6C</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        26,900,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-20%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-adidas-t-16-aven-10421bk-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện Adidas T-16 Aven-10421BK">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện Adidas T-16 Aven-10421BK</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        49,350,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        39,500,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-15%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-phong-gym-sakura-v8-chinh-hang.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ phòng Gym Sakura V8">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ phòng Gym Sakura V8</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        46,950,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        39,900,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden"></div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-sakura-v9-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ phòng Gym Sakura V9">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ phòng Gym Sakura V9</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        43,990,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-3%</div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-sakura-v9-1 (1).jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện Impulse PT300H">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ điện Impulse PT300H</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        49,000,000đ
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        47,500,000đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                                <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden"></div>
+                                <div class="container d-flex justify-content-center">
+                                    <img src="../img/may-chay-bo-impulse-ac4000.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ Impulse AC4000">
+                                </div>
+                                <div class="item-name text-center m-2">Máy chạy bộ Impulse AC4000</div>
+                                <div class="text-center m-2" style="font-size: 14px;">
+                                    <span class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="text-secondary">(1 đánh giá)</span>
+                                </div>
+                                <div class="text-center m-2">
+                                    <span class="text-decoration-line-through text-secondary me-1">
+                                        
+                                    </span>
+                                    <span class="text-danger fw-bold">
+                                        56,190,000đ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 mx-3 pb-3">
+                            <p style="text-align: justify;">
+                                <a class="fw-bold text-decoration-none" href="../BaiTapLon_WithBootstrap5/may-chay-bo.html">Máy chạy bộ</a> là thiết bị hỗ trợ rèn luyện thể thao hiệu quả, mang lại vóc dáng cân đối và sức khỏe dẻo dai với nhiều bài tập khác nhau. Có rất nhiều dòng máy với nhiều mức giá khác nhau cho bạn lựa chọn như máy chạy bộ điện, máy chạy bộ cơ, máy chạy bộ trên không, máy chạy bộ gia đình và máy chạy bộ cho phòng gym…
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.youtube.com/watch?v=O1lmPvvAd6A">
+                                    <img src="../img/top-10-may-chay-bo-tai-nha-tot-nhat.jpg" alt="">
+                                </a>
+                                <i>Video giới thiệu top 10 máy chạy bộ cho gia đình và phòng gym</i>
+                            </p>
+                            <h5 class="text-justify text-danger fw-bold">
+                                1. Cập nhật bảng giá máy chạy bộ tốt nhất
+                            </h5>
+                            <p class="text-justify">
+                                Giá máy chạy bộ được chia thành nhiều phân khúc với công suất, thông số và chức năng hoạt động khác nhau. Thường thiết bị tập chạy bộ điện này sẽ được chia thành 3 mức là giá rẻ, tầm trung và cao cấp. Chi tiết bảng giá mới nhất được chúng tôi cập nhật chi tiết ngay sau đây:
+                            </p>
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <th>Loại máy chạy bộ</th>
+                                    <th>Máy chạy bộ</th>
+                                    <th>Giá bán</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="5">Máy chạy bộ giá rẻ dưới 20 triệu đồng</td>
+                                        <td>Máy chạy bộ điện đa năng HQ-V1C</td>
+                                        <td>13,950,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ điện Sakura S33</td>
+                                        <td>15,450,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ điện đa năng Oreni RE-3</td>
+                                        <td>16,500,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ điện đa năng HQ-V2C</td>
+                                        <td>18,680,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ điện Sakura HQ-666</td>
+                                        <td>18,975,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5">Máy chạy bộ tầm trung từ 20 - 30 triệu đồng</td>
+                                        <td>Máy chạy bộ HQ-9900</td>
+                                        <td>21,450,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ điện Oreni RE-5</td>
+                                        <td>21,500,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ điện Oreni RE-7</td>
+                                        <td>24,500,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ điện đa năng Oreni RE-6</td>
+                                        <td>26,500,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ HQ-V6C</td>
+                                        <td>26,900,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5">Máy chạy bộ cao cấp trên 30 triệu đồng</td>
+                                        <td>Máy chạy bộ phòng Gym Sakura V8</td>
+                                        <td>39,900,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ Impulse PT300H</td>
+                                        <td>47,500,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ Impulse AC4000</td>
+                                        <td>56,190,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ điện Impulse RT500</td>
+                                        <td>56,500,000 đồng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy chạy bộ Impulse PT500H</td>
+                                        <td>83,380,000 đồng</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h5 class="text-danger text-justify fw-bold">
+                                2. Top máy chạy bộ được dùng phổ biến tại nhà
+                            </h5>
+                            <h6 class="fw-bold text-justify">Máy chạy bộ HQ-V2C</h6>
+                            <p class="text-justify">
+                                HQ-V2C là mẫu máy đáng để trải nghiệm chạy bộ tại nhà với công suất động cơ 3.0 HP. Dòng máy thuộc loại đa chức năng, tích hợp chạy bộ và gập bụng, rung massage. Người tập có thể trải nghiệm chạy ở nhiều mức tốc độ từ 1 đến 16 km/h. Độ dốc nâng chỉnh tối đa 15%, nâng cao hiệu quả đốt mỡ cho người chạy giảm cân.
+                            </p>
+                            <p class="text-justify">
+                                Tải trọng tối đa của <a href="" class="text-decoration-none">máy chạy HQ-V2C</a> là 135kg, khả năng chịu lực cao đáp ứng tốt nhu cầu tập luyện cho gia đình. Máy sở hữu bàn chạy rộng, thoải mái cho mọi đối tượng sử dụng. Máy chạy bộ HQ-V2C chắc chắn là lựa chọn giá rẻ hoàn hảo cho bạn thư giãn.
+                            </p>
+                            <p class="text-center">
+                                <img src="../img/May-chay-bo-dien-da-nang-HQ-V2C-1 (1).jpg" alt="" style="max-width: 100% !important;">
+                            </p>
+                            <h6 class="text-justify fw-bold">
+                                Máy chạy đa năng Oreni RE-3
+                            </h6>
+                            <p class="text-justify">
+                                Với công năng đa dạng, <a href="" class="text-decoration-none">máy chạy bộ Oreni RE-3</a> vừa bán chạy vừa được sử dụng khá phổ biến. Kích thước lắp đặt chỉ hơn 1m2, tiết kiệm đáng kể diện tích cho không gian nhà bạn. Thiết kế máy chắc chắn với khung thép dày sơn tĩnh điện không bong tróc trầy xước, độ bền cao.
+
+                                Khi không sử dụng đến, bạn có thể dễ dàng gấp gọn lại tiện lợi. Chế độ luyện tập của Oreni RE-3 tích hợp sẵn 12 bài tập tự động, các chế độ thích hợp lựa chọn cho cả người mới bắt đầu. Các tiện ích loa nghe nhạc, cổng cắm USB, giá đỡ, hộc đựng đồ, khóa an toàn, điều chỉnh vận tốc, độ nghiêng. Đặc biệt, với cảm biến nhịp tim trên thanh cầm, sức khỏe người tập sẽ được theo dõi đảm bảo an toàn, kịp thời phát hiện bất thường.
+                            </p>
+                            <p class="text-center">
+                                <img src="../may-chay-bo-dien-da-nang-oreni-or-3.jpg" alt="" style="max-width: 100% !important;">
+                            </p>
+                            <h6 class="text-justify fw-bold">
+                                Máy chạy bộ đa năng S33
+                            </h6>
+                            <p class="text-justify">
+                                Mẫu máy S33 thích hợp dùng cho gia đình với độ bền bỉ cao, bảng điều khiển dễ thao tác. Bàn chạy sử dụng công nghệ giảm chấn êm chân, chống trượt và chống ồn giúp người tập được thoải mái nhất. 15 chế độ tập gồm giảm cân, chạy địa hình, chạy đốt mỡ, chạy nhẹ nhàng… phù hợp cho mọi mục tiêu.
+                            </p>
+                            <p class="text-justify">
+                                Dưới chân đế máy chạy bộ Sakura S33 trang bị cả bánh xe di chuyển, dễ dàng thay đổi vị trí tập luyện khi cần thiết. Thêm nữa, khi mua tại Thiên Trường, quý khách hàng còn được tặng thêm đĩa xoay eo, kết hợp cùng đầu rung massage sẵn trên máy nâng cao thêm hiệu quả đốt mỡ.
+                            </p>
+                            <h6 class="text-justify fw-bold">
+                                Máy chạy bộ điện HQ-9900
+                            </h6>
+                            <p class="text-center">
+                                <img src="../BaiTapLon_WithBootstrap5/img/may-chay-bo-dien-da-nang-hq9900 (1).jpg" alt="" style="max-width: 100% !important;">
+                            </p>
+                            <p class="text-justify">
+                                Về công suất và độ bền sử dụng, có lẽ bạn hoàn toàn yên tâm khi sắm cho mình chiếc <a href="" class="text-decoration-none">máy chạy HQ-9900</a>. Kiểu dáng mạnh mẽ với công suất động cơ đến 4.0 HP, người tập thể thao chuyên nghiệp chắc chắn hài lòng. Vận tốc chạy bộ tối đa có thể đáp ứng tới 20km/h, ổn định trong suốt quá trình sử dụng. 
+                            </p>
+                            <p class="text-justify">
+                                HQ cũng được biết đến là thương hiệu máy chạy bộ chất lượng hàng đầu, các chi tiết luôn ưu tiên trải nghiệm người dùng. Thảm chạy máy chạy bộ đa năng HQ-9900 có độ rộng 52cm, bạn có thể tự tin sải bước trên bàn chạy, an toàn tuyệt đối.
+                            </p>
+                            <h6 class="text-justify fw-bold">
+                                Máy chạy bộ Oreni RE-6
+                            </h6>
+                            <p class="text-justify">
+                                <a href="" class="text-decoration-none">Máy chạy bộ đa năng Oreni RE-6</a> được nhiều gia đình yêu thích bởi sở hữu nhiều tính năng hỗ trợ ngoài chạy bộ: đầu rung massage tác động vùng bụng - vai - eo, thanh tập gập bụng nâng cao tác động giảm mỡ vòng 2. 
+                            </p>
+                            <p class="text-justify">
+                                Các dòng máy chạy hãng Oreni đều có tính năng gấp gọn tiết kiệm diện tích. Động cơ của Oreni RE-6 công suất 4.0 HP, thống kê đầy đủ các thông số chạy bộ: tốc độ, thời gian, quãng đường, calo tiêu hao, nhịp tim. Khác với nhiều mẫu thiết bị, thảm chạy của sản phẩm này cấu tạo 7 lớp, dày dặn và giảm chấn động tốt hơn. 
+                            </p>
+                            <p class="text-center">
+                                <img src="../img/hinh-anh-may-chay-bo-dien-da-nang-oreni-re-6-1(1).jpg" alt="" style="max-width: 100% !important;">
+                            </p>
+                            <h5 class="text-danger fw-bold text-justify">
+                                3. Máy chạy bộ nào bán chạy nhất hiện nay?
+                            </h5>
+                            <h6 class="text-justify fw-bold">
+                                Máy chạy bộ HQ-V6C
+                            </h6>
+                            <p class="text-justify">
+                                <a href="" class="text-decoration-none">Máy chạy HQ-V6C</a> là một trong những mẫu máy chạy nhà HQ được đánh giá cao. Động cơ 4.0 HP chạy êm, bền bỉ với độ dốc điều chỉnh linh hoạt tối đa 20%. Khóa an toàn gắn trực tiếp trên máy ngoài chức năng khởi động còn có vai trò quan trọng bảo vệ người dùng khỏi sự cố khi chạy bộ. 
+                            </p>
+                            <p class="text-justify">
+                                Màn hình trên bảng điều khiển máy chạy bộ HQ-V6C kích thước rộng 10 inch độ phân giải cao, hiển thị rõ nét các thông số. Thiết kế máy nhỏ gọn, có thể gấp lại. Các chế độ tập luyện trên máy thích hợp cho cả người mới và người tập thể thao chuyên sâu.
+                            </p>
+                            <h6 class="text-justify fw-bold">
+                                Máy chạy Sakura HQ-666
+                            </h6>
+                            <p class="text-justify">
+                                <a href="" class="text-decoration-none">Máy chạy bộ điện Sakura HQ-666</a> là thiết bị đa năng có động cơ 3.5 HP, thuộc phân khúc giá trung bình. Sản phẩm hỗ trợ tập luyện tại nhà cho mọi thành viên trong gia đình cực hữu ích. Bảng điều khiển cảm ứng hiện đại, đầy đủ hệ thống loa nghe nhạc, jack cắm mp3, USB, hộc đựng đồ,... 
+                            </p>
+                            <p class="text-justify">
+                                Tính năng tra dầu trên máy chạy bộ là loại tự động, tiết kiệm đáng kể thời gian bảo dưỡng thiết bị. Khi không sử dụng, chỉ cần nhấc chân máy gập gọn lại. Thảm chạy ma sát tốt, hệ thống đệm cao su giảm chấn giảm bớt đáng kể tiếng ồn khi chạy bộ. Nếu bạn đang tìm dòng máy chạy giảm cân tại nhà đa năng, nhất định đừng bỏ qua Sakura HQ 666 nhé.
+                            </p>
+                            <p class="text-center">
+                                <img src="../img/may-chay-bo-dien-sakura-hq-666-1 (1).jpg" alt="" style="max-width: 100% !important;">
+                            </p>
+                            <h6 class="text-justify">
+                                Máy chạy bộ phòng gym Sakura V8
+                            </h6>
+                            <p class="text-justify">
+                                Nếu đang tìm kiếm chiếc máy tập hiệu quả cho người tập thể hình, <a href="" class="text-decoration-none">máy chạy phòng gym Sakura V8</a> chắc chắn là lựa chọn tuyệt vời. Động cơ motor trung bình 3.0 HP tối đa có thể đạt đỉnh 6.0 HP. Dòng máy chuyên dụng cho phòng gym này cũng được các huấn luyện viên thể hình đánh giá cao.
+                            </p>
+                            <p class="text-justify">
+                                Chức năng máy tập Sakura V8 chuyên về chạy bộ nên đáp ứng tốt cho nhu cầu tập kéo dài. Băng tải dày cùng khả năng chống trượt tốt, xung quanh bàn chạy gắn thêm đèn led cảnh báo giới hạn phạm vi chạy bộ. Đặc biệt, tại vị trí bảng điều khiển còn có thêm cả quạt làm máy, duy trì hiệu quả chạy bộ bền bỉ hơn. Chức năng tra dầu tự động hỗ trợ công tác bảo trì dễ dàng, máy luôn vận hành mượt mà.
+                            </p>
+                            <p class="text-center"><img src="../img/may-chay-bo-phong-gym-sakura-v8-chinh-hang.jpg" alt="" style="max-width: 100% !important;"></p>
+                            <h6 class="text-justify fw-bold">
+                                Máy chạy đa năng Oreni RE-7
+                            </h6>
+                            <p class="text-justify">
+                                <a href="" class="text-decoration-none">Máy chạy bộ Oreni RE-7</a> sở hữu thiết kế đẹp mắt, kiểu dáng sang trọng thích hợp lắp đặt cho mọi không gian. Ứng dụng sản xuất theo công nghệ Nhật Bản, máy tập có bảng điều khiển thông minh, cấu tạo chắc chắn chịu lực tốt. Khung ngoài của máy phủ sơn tĩnh điện chống oxy hóa, bong tróc.
+                            </p>
+                            <p class="text-justify">
+                                Oreni RE-7 xứng đáng là máy chạy bộ quốc dân dành cho gia đình, tập luyện toàn thân tích hợp ngay trên một thiết bị. Tốc độ chạy và độ dốc bàn chạy dễ dàng điều chỉnh cho phù hợp với từng cá nhân. Kích thước tối ưu có thể dùng cho phòng diện tích hẹp.
+                            </p>
+                            <h6 class="fw-bold">
+                                Máy chạy bộ Impulse PT300H
+                            </h6>
+                            <p class="text-center"><img src="../img/may-chay-bo-dien-impulse-pt300h-1(1).jpg" alt="" style="max-width: 100% !important;"></p>
+                            <p class="text-justify">
+                                Impulse PT300H là mẫu máy chạy bộ đơn năng cao cấp, hiệu suất đáp ứng tốt cường độ chạy bộ liên tục. Các thiết bị tập thương hiệu Impulse có chất lượng cao, lắp đặt phổ biến tại các phòng tập chuyên nghiệp. Viền góc máy đều được thiết kế bo tròn, tối ưu độ an toàn cho người tập, giảm chấn thương khi va đập.
+                            </p>
+                            <p class="text-justify">
+                                Trên <a href="" class="text-decoration-none">máy chạy bộ Impulse PT300H</a> cài đặt tổng 13 chương trình bao gồm chương trình cài đặt trước, chương trình người tập, chương trình theo mục tiêu, chương trình HR… Hệ thống giảm chấn Impulse Soft® độc quyền giảm áp lực tác động lên chân khi chạy, bảo vệ xương khớp. Có trọng lượng khá nặng nên thiết bị này có trang bị bánh xe di chuyển phía trước khi cần thiết.
+                            </p>
+                            <h5 class="text-danger fw-bold">
+                                4. Kinh nghiệm chọn mua máy chạy bộ chất lượng
+                            </h5>
+                            <p class="text-justify">
+                                Muốn chọn mua được máy chạy bộ phù hợp được cả nhu cầu và khả năng tài chính, bạn đọc cần bỏ túi ngay những kinh nghiệm được chia sẻ sau đây:
+                                
+                            </p>
+                            <p class="text-justify">
+                                - Chọn máy dựa trên chức năng, công suất: Trước khi xác định được vấn đề này, người mua cần biết rõ mua thiết bị sử dụng cho ai, mục đích là gì. Nếu sử dụng cho gia đình ít người, loại công suất dưới 3.5 HP sẽ phù hợp. Còn với mục tiêu chạy bộ hiệu suất cao, chức năng vận hành mạnh mẽ nên loại loại máy công suất từ 3.5 HP trở lên. Các dòng máy đơn năng cho chạy bộ thường dùng cho người tập chuyên nghiệp điều chỉnh độ nghiêng và tốc độ linh hoạt, với nhu cầu đa dạng bạn nên chọn loại hỗ trợ gập bụng, có đầu rung massage…
+                            </p>
+                            <p class="text-center"><img src="../img/may-chay-bo.jpg" alt="" style="max-width: 100% !important;"></p>
+                            <p class="text-justify">
+                                - Tìm hiểu thương hiệu uy tín: Các đơn vị cung cấp máy chạy hiện nay trên thị trường khá đa dạng, để lựa chọn được một địa chỉ đáng tin cậy khá khó khăn với người mua. Nếu không tìm hiểu kỹ, rất dễ gặp tình trạng hàng kém chất lượng, tiền mất mà không sử dụng được. Bạn nên dành thời gian tìm hiểu về các hãng phân phối đã có tiếng, tham khảo phản hồi từ người mua trước đó để có cái nhìn bao quát hơn.
+                            </p>
+                            <p class="text-justify">
+                                - Trải nghiệm trực tiếp sản phẩm: Sử dụng các chức năng trên thiết bị thực tế là cách đánh giá chính xác nhất được về chất lượng sản phẩm ban đầu. Nhiều khi các thông số có trên internet chỉ mang tính chất tham khảo, người mua máy chạy bộ nên đến tận nơi trải nghiệm sử dụng và cảm nhận trực tiếp để có cái nhìn khách quan hơn.
+                            </p>
+                            <p class="text-center"><img src="../img/may-chay-bo-dien.jpg" alt="" style="max-width: 100% !important;"></p>
+                            <p class="text-justify">
+                                <span class="text-decoration-underline fw-bold">Quan tâm:</span>
+                                <span class="text-decoration-none">Cách nhận biết máy chạy bộ chính hãng</span>
+                            </p>
+                            <h5 class="text-danger fw-bold">5. Mua máy chạy bộ ở đâu chính hãng, giá tốt?</h5>
+                            <p class="text-justify">
+                                Là thiết bị tập thể dục sử dụng điện nên nếu không tìm được địa chỉ đáng tin cậy, khách hàng sẽ mua phải hàng kém chất lượng, mất tiền lại không đảm bảo an toàn. Có kinh nghiệm hoạt động trong lĩnh vực dụng cụ thể thao hơn 10 năm, máy chạy bộ Thiên Trường là thương hiệu uy tín hàng đầu tại Việt Nam nhiều khách hàng biết đến.
+                            </p>
+                            <p class="text-justify">
+                                Lý do khách hàng nên mua máy chạy tại Thiên Trường:
+                            </p>
+                            <p class="text-justify">
+                                - Sản phẩm chính hãng, giá thành hợp lý: Được nhập trực tiếp từ nhà sản xuất không qua trung gian, máy chạy bộ Thiên Trường có đầy đủ giấy tờ xuất xứ rõ ràng. Mọi quy trình đều được các chuyên gia, kỹ sư lâu năm trong nghề kiểm định chất lượng. Thiết bị tập luyện có giá thành rẻ nhất so với nhiều dòng máy cùng phân khúc và chức năng trên thị trường.
+                            </p>
+                            <p class="text-center"><img src="../img/may-chay-bo-tai-thien-truong-de-dang-thao-tac.jpg" alt="" style="max-width: 100% !important;"></p>
+                            <p class="text-justify">
+                                - Hỗ trợ giao hàng, lắp đặt tận nơi: Chỉ cần liên hệ đặt hàng, khâu vận chuyển và lắp đặt chúng tôi sẽ phục vụ bạn hoàn tất tại nhà. Phương thức thanh toán linh hoạt, thời gian giao hàng nhanh chóng cam kết khách hàng nhận được máy chạy sớm nhất.
+                            </p>
+                            <p class="text-justify">
+                                - Sửa chữa, bảo dưỡng trong thời gian bảo hành tận tình: Thông thường máy chạy bộ sẽ có thời gian bảo hành là 1 - 5 năm. Kể từ khi nhận máy đến hết thời hạn bảo hành, khách hàng mua máy chạy bộ của chúng tôi nếu thấy xuất hiện bất kỳ lỗi hỏng hay sự cố nào, nhân viên kỹ thuật sẽ nhanh chóng đến tận nhà sửa chữa và bảo dưỡng. 
+                            </p>
+                            <p class="text-center"><img src="../img/thien-truong-sua-chua-bao-hanh-may-chay-bo-tai-nha.jpg" alt="" style="max-width: 100% !important;"></p>
+                            <p class="text-justify">
+                                - Dịch vụ chăm sóc khách hàng chu đáo: Đội ngũ tư vấn và kỹ thuật viên tại Thiên Trường luôn nhiệt tình hỗ trợ khi bạn có thắc mắc hay xử lý sự cố hỏng hóc trong thời gian bảo hành. Bạn sẽ nắm rõ được cấu tạo, thiết kế máy chạy bộ như thế nào, bao gồm những chức năng gì, sử dụng ra sao. Đồng thời, chúng tôi còn hỗ trợ tư vấn chế độ tập phù hợp với mục tiêu của bạn.
+                            </p>
+                            <p class="text-justify">
+                                Muốn mua máy chạy bộ chất lượng với giá tốt, đến ngay hệ thống showroom thể thao Thiên Trường để chọn được sản phẩm uy tín và ưng ý nhất:
+                            </p>
+                            <p class="text-justify">
+                                - 208D Lê Trọng Tấn, Thanh Xuân, Hà Nội. (SĐT: 0983 080 786).
+                            </p>
+                            <p class="text-justify">
+                                - 323 Trần Văn Kiểu, Phường 11, Quận 6, TpHCM. (SĐT: 094 979 2525).
+                            </p>
+                            <p class="text-justify">
+                                - 657 Trần Cao Vân, Quận Thanh Khê, Đà Nẵng. (SĐT: 0944086000).
+                            </p>
+                            <p class="text-justify">
+                                - 522 Trần Hưng Đạo, P Lộc Vượng, Tp Nam Định. (SĐT: 0987883956).
+                            </p>
+                            <p class="text-justify">
+                                - 238 Hàng Kênh, Quận Lê Chân, Tp Hải Phòng. (SĐT: 0968 887 488).
+                            </p>
+                            <p class="text-justify">
+                                Đừng ngại ngần gì, hãy nhấc máy và gọi vào Hotline 09686 50686 nhân viên của <a href="../BaiTapLon_WithBootstrap5/index.html">Thể thao Thiên Trường</a> sẽ tư vấn và hướng dẫn đặt mua máy chạy bộ nhanh chóng với mức ưu đãi tốt!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container-xxl mt-4 p-0">
+        <div class="container-fluid bg-white py-5">
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-danger">CHI NHÁNH SHOWROOM CỬA HÀNG DỤNG CỤ THỂ THAO THIÊN TRƯỜNG</h5>
+                    <div class="row row-cols-xl-3 row-cols-lg-3 row-cols-sm-2">
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Hà Nội</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>208D Lê Trọng Tấn, Quận Thanh Xuân</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Mr Quân:</span>
+                                        <span class="text-danger" role="button">0983 080 786</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Mr Hùng:</span>
+                                        <span class="text-danger" role="button">0916 131 402 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Tp. Hồ Chí Minh</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>323 Trần Văn Kiểu, Phường 11, Quận 6</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Mr Nguyện:</span>
+                                        <span class="text-danger" role="button">094 979 25 25</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Hạnh:</span>
+                                        <span class="text-danger" role="button">0987 190 944 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Đà Nẵng</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>657 Trần Cao Vân, Quận Thanh Khê</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Thủy:</span>
+                                        <span class="text-danger" role="button">0944 086 000 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Hotline:</span>
+                                        <span class="text-danger" role="button">0236.3622.777</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Nam Định</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>522 Trần Hưng Đạo, Phường Lộc Vượng</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Hồng:</span>
+                                        <span class="text-danger" role="button">0987 883 956 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Hải Phòng</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>238 Hàng Kênh, Quận Lê Chân</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Tuấn Anh:</span>
+                                        <span class="text-danger" role="button">079 438 5555 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Hằng:</span>
+                                        <span class="text-danger" role="button">0968 887 488 (Zalo)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Đồng Nai</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>QL 1A, cầu Suối Cát, Huyền Xuân Lộc</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Hotline1:</span>
+                                        <span class="text-danger" role="button">0972 147 205</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Hotline2:</span>
+                                        <span class="text-danger" role="button">0944 871 886</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="none-visible-xl col-4">
+                    <h5 class="text-danger">THIÊN TRƯỜNG CHANEL</h5>
+                    <div role="button">
+                        <a href="https://www.youtube.com/watch?v=_rOFf0lEutw" rel="nofollow">
+                            <img class="img-fluid" src="../img/cong-ty-the-thao-thien-truong.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row mt-4">
+                <div class="col-xl-6">
+                    <h6 class="fw-bolder mb-4">DỤNG CỤ THỂ THAO THIÊN TRƯỜNG SPORT</h6>
+                    <p class="shop-info"><b>Thiên Trường Sport</b> là đơn vị chuyên nhập khẩu, phân phối, bán buôn, bán lẻ
+                        <b>dụng vụ thể dục thể thao</b> và thể hình uy tín nhất tại Việt Nam. Toàn bộ sản phẩm
+                        do Thiên Trường cung cấp đều đảm bảo chính hãng, thông tin và giá
+                        <b>bán dụng cụ thể thao</b> được niêm yết, đảm bảo quyền lợi của Quý Khách hàng.
+                    </p>
+                    <div class="fw-normal">
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span>208D Lê Trọng Tấn, Thanh Xuân, Hà Nội</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-danger" role="button">0243 566 7337</span>
+                        </p>
+                        <p class="m-0 mb-3">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="fw-bolder mb-4">VỀ CHÚNG TÔI</h6>
+                            <p class="shop-info m-1"><a href="../html/gioithieu.html" class="footer-link text-decoration-none">Giới thiệu</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Hệ thống đại lý</a></p>
+                            <p class="shop-info m-1"><a href="../html/van-chuyen-thanh-toan.html" class="footer-link text-decoration-none">Vận chuyển & Thanh toán</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Phương thức thanh toán</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chính sách bảo hành</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chính sách đổi trả</a></p>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-bolder mb-4">SẢN PHẨM</h6>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Ghế tập tạ</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Giàn tạ đa năng</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Ghế tập bụng</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Bao cát đấm bốc</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Bàn bóng bàn</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Máy tập chân</a></p>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-bolder mb-4">KIẾN THỨC</h6>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Hít đất đúng cách</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Cách tập hít xà đơn</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Tập Gym giảm cân</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chạy bộ giảm cân</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Nhảy dây giảm cân</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chiều cao lưới bóng chuyền</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="left-contact position-fixed">
+        <div class="messenger fs-2 text-white d-flex justify-content-center align-content-center rounded-circle"  data-bs-toggle="tooltip" data-bs-placement="top" title="Nhắn tin cho chúng tôi qua Facebook">
+            <i class="bi bi-messenger"></i>
+        </div>
+        <div class="geo-alt fs-2 text-white bg-info d-flex justify-content-center align-content-center rounded-circle mt-3"  data-bs-toggle="tooltip" data-bs-placement="top" title="Liên hệ">
+            <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="scroll-to-top fs-5 text-white d-flex justify-content-center align-items-center rounded-circle mt-3" role="button">
+            <i class="bi bi-caret-up-fill m-0 p-0 position-absolute"></i>
+            <span class="m-0 p-0 position-absolute">TOP</span>
+        </div>
+    </div>
+    <div class="gray-background z-2">
+    </div>  
+    <div class="he-thong-cua-hang position-fixed z-3 bg-white">
+        <h3 class="text-center py-4 border-bottom text-danger">DANH SÁCH CỬA HÀNG THỂ THAO THIÊN TRƯỜNG 
+            <div class="close-btn-he-thong-cua-hang rounded-circle m-0 p-0 btn btn-light text-dark" role="button"><span>x</span></div>
+        </h3>
+        <div class="row m-0 p-0">
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-ha-noi.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold">Hà Nội</h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">208D Lê Trọng Tấn, Thanh Xuân</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0243 566 7337</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-tphcm.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold">Tp. Hồ Chí Minh</h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">323 Trần Văn Kiểu, Quận 6</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0286 290 1232</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0">
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-da-nang.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold"></h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">657 Trần Cao Vân, Quận Thanh Khê</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">02363 622 777</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-nam-dinh.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold">Nam Định</h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">522 Trần Hưng Đạo, P Lộc Vương</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0987 833 956</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0">
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-sport-hai-phong-1.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold"></h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">238 Hàng Kênh, Quận Lê Chân</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0968 887 488</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tim-kiem position-fixed z-3">
+        <div class="tim-kiem-close-btn position-absolute">
+            <span class="">x</span>
+        </div>
+        <div class="floating-search-bar input-group">
+            <input type="text" class="border-0 px-2" placeholder="Từ khóa tìm kiếm...">
+            <button class="text-danger border-0 px-2">
+                <i class="bi bi-search"></i>
+                Tìm kiếm
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Bootstrap5/css/bootstrap.min.css">
+    <script src="../Bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="../jquery-3.7.1/jquery.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/aside.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/header.js"></script>
+    <script src="../js/general.js"></script>
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="p-0 m-0 bg-body-secondary">
+    <header class="header container-fluid p-0 top-0 bg-white position-absolute z-1">
+        <nav class="top-header nav bg-danger p-0 justify-content-end">
+            <a href="../html/gioithieu.html" class="nav-link text-white">
+                Giới thiệu
+            </a>
+            <a href="../html/van-chuyen-thanh-toan.html" class="nav-link text-white">
+            Vận chuyển & Thanh toán
+            </a>
+            <a href="" class="nav-link text-white">
+                Dự án
+            </a>
+            <a href="" class="nav-link text-white">
+                Tư vấn mua hàng
+            </a>
+            <a href="" class="nav-link text-white">
+                Tin tức
+            </a>
+            <a href="" class="nav-link text-white">
+                Tuyển dụng
+            </a>
+            <a href="../html/lien-he.html" class="nav-link text-white me-5">
+                Liên hệ
+            </a>
+        </nav>
+        <div class="second-header bg-white container-fluid">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="p-2 w-25 d-flex flex-shrink-0 flex-grow-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Dụng Cụ Thể Thao - Cửa Hàng Thể Thao Uy Tìn, Giá Tốt">
+                    <a href="../index.html">
+                        <img class="logo img-fluid" src="../img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="p-2 d-flex flex-grow-1 flex-shrink-1">
+                    <div class="middle-section input-group">
+                        <input type="text" class="form-control w-auto d-flex flex-grow-1" placeholder="Từ khóa tìm kiếm...">
+                        <div class="tim-kiem-btn span input-group-text text-danger" role="button">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <span class="px-1">Tìm kiếm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section p-2 row">
+                    <div id="he-thong-cua-hang-btn" class="container col d-flex align-items-center" role="button">
+                        <div class="col h-100 p-0 m-0 d-flex align-items-center">
+                            <ion-icon class="fs-2 text-danger" name="location-sharp"></ion-icon>
+                        </div>
+                        <div class="col p-0 m-0">
+                            <div class="row fw-bold">Hệ thống</div>
+                            <div class="row fw-normal">Cửa hàng</div>
+                        </div>
+                    </div>
+                    <div class="container col" role="button">
+                        <a class="text-dark text-decoration-none" href="../html/gio-hang.html">
+                            <div class="d-flex align-items-center">
+                                <div class="col h-100 p-0 m-0 d-flex align-items-center">
+                                    <ion-icon class="fs-2 text-danger" name="cart"></ion-icon>
+                                </div>
+                                <div class="col p-0 m-0">
+                                    <div class="row fw-bold">Giỏ hàng</div>
+                                    <div class="row fw-normal">0đ</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-xs ms-5 visible-xs">
+                    <div class="search-btn rounded-3 visible-xs" role="button">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-list container-fluid border border-start-0 border-end-0">
+                <ul class="sub-menu-list nav container d-flex align-items-center my-0" style="font-size: 12.45px;">
+                    <li class="nav-item border-end">
+                        <a href="../home.html" class="nav-link text-danger">
+                            <ion-icon name="home"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            MÁY CHẠY BỘ
+                        </a>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            MÁY TẬP THỂ DỤC
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Xe Đạp Tập Thể Dục
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Máy Tập Cơ Bụng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Thiết Bị Phục Hồi Chức Năng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Xe Đạp Tập Thể Dục
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ VÕ THUẬT
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Đích Đá - Đích Đấm Boxing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Găng Tay Boxing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Trụ & Bao Cát Đấm Bốc
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Thiết Bị Bảo Hộ Võ Thuật
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Dụng Cụ Tập Thể Lực
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Côn Nhị Khúc
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ TẬP GYM
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Giàn Tạ Đa Năng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Ghế Tập Tạ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Xà Đơn - Xà Kép
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Tạ Tay - Tạ Đơn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Ghế Tập Bụng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Phụ Kiện Tập Gym
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ BÓNG BÀN
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Bàn Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Quả Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Lưới Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Vợt Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Cốt Vợt Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Mặt Vợt Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Máy Bắn Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">
+                                    Phụ Kiện Bóng Bàn
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            THIẾT BỊ DẠY HỌC
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Giáo Dục Thể Chất Thông Tư 38 39 40</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ NGOÀI TRỜI
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên HQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa (Trụ Đôi)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa (Trụ Đơn D140)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Chung Cư - Sân Vườn Vifa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa (Trụ Đơn D114)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Sodex Sport</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border-start">
+                        <a href="../html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DANH MỤC KHÁC
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Ghế Massage</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Tập Yoga <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Thảm Tập Yoga</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Bóng Tập Yoga</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Bàn Bi Lắc</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Phòng Gym <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Tập Gym Impulse</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Đá</a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Quả Bóng Đá</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Khung Thành và Lưới Bóng Đá</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Phụ Kiện Bóng Đá</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Cầu Lông <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông Yonex</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Thảm Sân Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Dây Đan Vợt Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Quả Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông Proace</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông Tập Luyện</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Căng Vợt Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ - Lưới Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Máy Bắn Cầu Lông</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href=../html/may-chay-bo.html"" class="nav-link text-white">Dụng Cụ Bóng Rổ</a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ - Vành - Lưới Bóng Rổ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Quả Bóng Rổ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Phụ Kiện Bóng Rổ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Chuyền <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Quả Bóng Chuyền</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ và Lưới Bóng Chuyền</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Phụ Kiện Bóng Chuyền</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Chày</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Tennis - Pickleball <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ Tennis - Lưới Tennis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Bóng Tennis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Pickleball Niupipo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Pickleball Boer Sport</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Bóng Pickleball</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Trụ Lưới Pickleball</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Pickleball AMA Sport</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Vợt Pickleball</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bơi Lội <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Kính Bơi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Mũ Bơi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Bể Bơi - Phao Bơi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Cúp - Huy Chương - Kỷ Niệm Chương <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Cúp Thể Thao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Huy Chương Thể Thao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Cúp Pha Lê</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Cờ Lưu Niệm</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Tập Thể Dục Thẩm Mỹ</a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Thể Thao Adidas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ SVĐ - Nhà Thi Đấu <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Sàn Thể Thao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../html/may-chay-bo.html" class="nav-link text-white">Ghế Khán Đài</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../html/may-chay-bo.html" class="nav-link text-white">Bảng Điểm Thể Thao</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-xl container-xxl">
+            <p class="direction-line">
+                <a class="text-decoration-none text-secondary-emphasis" href="../home.html">Trang chủ</a> /
+                <a class="text-decoration-none text-secondary-emphasis" href="../html/gioithieu.html">Thông tin giới thiệu về Công ty Dụng cụ Thể Thao Thiên Trường</a>
+            </p>
+        </div>
+        <div class="container-xl container-xxl bg-white py-4">
+            <h4 class="fw-bold" style="text-align: justify;">THÔNG TIN GIỚI THIỆU VỀ CÔNG TY DỤNG CỤ THỂ THAO THIÊN TRƯỜNG</h4>
+            <h5 class="fw-bold" style="text-align: justify;">I - Giới thiệu công ty thể thao Thiên Trường</h5>
+            <p style="text-align: justify;"><b>- Tên công ty:</b> Công ty TNHH Thể thao Thiên Trường.</p>
+            <p style="text-align: justify;"><b>- Ngày thành lập:</b> 9/3/2010.</p>
+            <p style="text-align: justify;"><b>- Ngành nghề hoạt động chính:</b> Kinh doanh Máy - Thiết bị - Dụng cụ Thể dục Thể thao, Thiết bị phòng gym, Dụng cụ tập thể hình.</p>
+            <p style="text-align: justify;"><b>- Giấy phép kinh doanh số:</b> 0104516913.</p>
+            <p style="text-align: center;">
+                <img src="../img/cong-ty-the-thao-thien-truong (1).jpg" alt="" style="max-width:100% !important;"><br>
+                <i>Cửa hàng dụng cụ thể thao Thiên Trường ngay mặt đường Lê Trọng Tấn</i>
+            </p>
+            <p style="text-align: justify"><b>- Lịch sử phát triển công ty</b></p>
+            <p style="text-align:justify">
+                Nền tảng xuất phát từ một cửa hàng nhỏ kinh doanh <a href="../home.html" class="text-decoration-none">dụng cụ thể dục</a>, năm 2010, Công ty TNHH Thể thao Thiên Trường được thành lập và tự hào là một trong những doanh nghiệp uy tín hàng đầu cung cấp các dụng cụ tập luyện thể dục thể thao và thể hình.
+            </p>
+            <p style="text-align:justify">
+                Các sản phẩm công ty cung cấp và bán lẻ đa dạng, đầy đủ các mặt hàng: máy tập thể dục như xe đạp tập, máy chạy bộ, máy tập bụng, máy tập chân…; máy tập thể dục ngoài trời; thiết bị thể thao trường học; dụng cụ tập thể thao các môn bóng đá, bóng rổ, bóng chuyền, yoga… máy chăm sóc sức khỏe như ghế massage… Các dự án lắp đặt thiết bị cũng được chúng tôi trực tiếp thiết kế và thi công.
+            </p>
+            <p style="text-align:justify">
+                Với phương châm "sự hài lòng của bạn là sự thành công của chúng tôi", Thiên Trường luôn mang đến những sản phẩm có chất lượng tốt nhất, phù hợp với nhu cầu tăng cường sức khỏe của người Việt.
+            </p>
+            <p style="text-align:justify">
+                Năm 2022, Thiên Trường vinh dự lọt <b>Top 10 Thương hiệu Xuất sắc Châu Á</b> nhờ những đóng góp lớn cho ngành cung cấp thiết bị thể dục, được khách hàng tin tưởng lựa chọn.
+            </p>
+            <p style="text-align: center;">
+                <img src="../img/thien-truong-nhan-giai-thuong-hieu-xuat-sac-chau-a(1).jpg" alt="" style="max-width:100% !important;"><br>
+            </p>
+            <h4 class="fw-bold">1 - Sứ mệnh</h4>
+            <p style="text-align: justify;">
+                Theo đuổi sứ mệnh phụng sự <b>"vì sức khỏe cộng đồng"</b>, Thiên Trường Sport nhận thức rõ rằng con người chính là trung tâm, sức khỏe của khách hàng chính là tài sản quý giá nhất quyết định đến sự thành công của doanh nghiệp.
+            </p>
+            <p style="text-align: justify;">
+                Chính vì vậy, chúng tôi luôn không ngừng cải tiến chất lượng sản phẩm, mang thể thao đến với nhiều người hơn, đáp ứng nhu cầu sử dụng thiết bị thể dục thể thao chất lượng với giá hợp lý. Nâng cao chất lượng cuộc sống, sức khỏe cho người Việt.
+            </p>
+            <h4 class="fw-bold">2 - Tầm nhìn và mục tiêu chiến lược</h4>
+            <p style="text-align: justify;">
+                Tầm nhìn của chúng tôi là xây dựng Công ty TNHH Thể thao Thiên Trường trở thành doanh nghiệp uy tín hàng đầu Việt Nam trong lĩnh vực cung cấp thiết bị thể dục thể thao chất lượng phục vụ cuộc sống con người.
+            </p>
+            <h4 class="fw-bold">3 - Sản phẩm công ty cung cấp</h4>
+            <h5 class="fw-bold">3.1. Máy chạy bộ</h5>
+            <p style="text-align: justify;">
+                Máy chạy bộ sử dụng điện hỗ trợ thực hiện các bài tập đi bộ và chạy bộ ngay tại chỗ, có thể thay đổi độ dốc và tốc độ cho phù hợp. Máy tập chạy bộ có 2 loại đơn năng và đa năng, dòng đơn năng chuyên về chức năng chạy bộ nên hạn chế về chi tiết phụ trợ, dòng đa năng tích hợp cả tạ tay, đai massage, thanh gập bụng, đĩa xoay eo…
+            </p>
+            <p style="text-align: center;">
+                <img src="../img/may-chay-bo-thien-truong-sport.jpg" alt="" style="max-width:100% !important;">
+            </p>
+            <p style="text-align: justify;">
+                Ưu điểm nổi bật ở các dòng máy chạy bộ Thiên Trường:
+            </p>
+            <p style="text-align:justify">
+                - Công suất động cơ mạnh mẽ: Động cơ máy chạy tại Thiên Trường có công suất tối thiểu từ 2.5 HP, đảm bảo hiệu quả tập luyện, mức tải trọng phù hợp nhiều đối tượng người tập.
+            </p>
+            <p style="text-align:justify">
+                - Bàn chạy rộng rãi, tạo cảm giác thoải mái khi chạy: Các mẫu máy chạy có kích thước bàn chạy khá rộng rãi, bạn có thể thoải mái sải bước, vung tay tập thể dục. 
+            </p>
+            <p style="text-align:justify">
+                - Tích hợp sẵn chương trình tập luyện: Nhiều chế độ chạy bộ được thiết lập sẵn theo mục tiêu tập luyện, giúp người mới dễ dàng lựa chọn cho phù hợp.  
+            </p>
+            <p style="text-align: justify;">
+                - Tiện ích trên máy đầy đủ: Bảng điều khiển hiển thị đủ thông số, màn hình rõ nét, có hộc đựng đồ, khóa an toàn, cảm biến nhịp tim…
+            </p>
+            <h5 class="fw-bold">3.2. Máy tập thể dục</h5>
+            <p style="text-align: justify;">
+                Các dòng <a class="text-decoration-none" href="">máy tập thể dục</a> phổ biến được khách hàng quan tâm nhiều nhất hiện nay: xe đạp tập, máy tập cơ bụng, máy tập chân, xe đạp tập chức năng. Các thiết bị này kích thước nhỏ gọn, dễ dàng tập luyện nâng cao thể lực ngay tại nhà. 
+            </p>
+            <p style="text-align: justify;">
+                - <a class="text-decoration-none" href="">Xe đạp tập trong nhà</a> chủ động tập bất cứ khi nào muốn. Cấu tạo xe có nhiều kiểu: bàn đạp rộng không yên, xe đạp có yên, xe đạp tập có tựa lưng, xe đạp thể dục liên hoàn, xe đạp tập gym… Các mức kháng lực trên xe có thể điều chỉnh linh hoạt theo thể trạng người tập. Đồng hồ hiển thị đủ các thông số thời gian, tốc độ, quãng đường, calo tiêu hao, nhịp tim.
+            </p>
+            <p style="text-align:center">
+                <img src="../img/xe-dap-tap-thien-truong.jpg" alt="" style="max-width:100% !important;">
+            </p>
+            <p style="text-align: justify;">
+                - <a class="text-decoration-none" href="">Thiết bị phục hồi chức năng</a> : Tập tăng cường và hồi phục chức năng vận động cho người bị chấn thương, gặp vấn đề sức khỏe, cải thiện tinh thần người tập vui vẻ hơn.
+            </p>
+            <p style="text-align: justify;">
+                - <a class="text-decoration-none" href="">Máy tập cơ bụng</a> hỗ trợ các bài tập chuyên vùng bụng giảm mỡ, cho eo thon gọn và săn chắc. Giá máy tập lại không quá cao, phù hợp tài chính đa số mọi người. Máy tập cơ bụng gồm các loại chính là con lăn tập bụng, máy gập bụng, máy tập bụng dạng trượt, ghế tập cơ bụng.
+            </p>
+            <h5 class="fw-bold">3.3. Dụng cụ tập gym</h5>
+            <p style="text-align: justify;">
+                Bao gồm nhiều <a class="text-decoration-none" href="">dụng cụ tập thể hình</a>: giàn tạ đa năng, ghế tập tạ, xà đơn xà kép, tạ tay tạ đơn, ghế tập bụng, các phụ kiện (dây tập, găng tay tập, đai lưng thể hình, dây kéo xô…). 
+            </p>
+            <p style="text-align: justify;">
+                - <a class="text-decoration-none" href="">Giàn tập tạ đa năng</a> Cấu tạo gồm nhiều bộ phận đáp ứng nhu cầu tập gym tác động toàn diện nhóm cơ ngực, tay, chân, cơ lưng xô, mông, bụng cho vóc dáng chuẩn. Giàn tạ tập đa chức năng còn tích hợp cả xà đơn xà kép, bao cát đấm bốc, ghế tập bụng,... lắp đặt được cả ở phòng gym, phòng tập chuyên nghiệp tại nhà.
+            </p>
+            <p style="text-align: justify;">
+                - <a class="text-decoration-none" href="">Ghế tập tạ</a>: Có kích thước nhỏ gọn hơn giàn tạ, tập trung hỗ trợ bài tập tạ đơn, tạ đòn, thích hợp sử dụng tập luyện tại nhà. Hiệu quả tập gym tại nhà vẫn được đảm bảo mà giá thành lại phải chăng, không tốn nhiều không gian sử dụng.
+            </p>
+            <p style="text-align: justify;">
+                - <a class="text-decoration-none" href="">Xà đơn, xà kép</a>: Tập rèn luyện nhóm cơ tay, cơ ngực, cơ xô, cơ vai, có tác dụng hỗ trợ tăng chiều cao tự nhiên hoàn hảo, xây dựng cơ bắp thân trên hiệu quả. 
+            </p>
+            <p style="text-align: justify;">
+                - <a class="text-decoration-none" href="">Tạ tay, tạ đơn</a>: Tạ tập tại shop thể dục Thiên Trường có giá tốt nhất thị trường, chỉ từ 8500 đồng/kg. Chất liệu sử dụng chế tạo có nhiều loại như sắt, nhựa, kim loại bọc cao su, đa dạng các mức trọng lượng, nhiều loại tạ cân nặng có thể điều chỉnh tùy mức tập cơ thể.
+            </p>
+            <p style="text-align: justify;">
+                - <a class="text-decoration-none" href="">Ghế tập bụng</a>: Thiết kế ghế kiểu cong, giúp dễ dàng nằm và gập bụng đúng tư thế theo đường cong cơ thể, góc nâng người gập bụng lớn hơn 180 độ.
+            </p>
+            <p style="text-align: center;">
+                <img src="../img/dung-cu-tap-gym-thien-truong-nhieu-loai.jpg" alt="" style="max-width: 100% !important;">
+            </p>
+            <h5 class="fw-bold">3.4. Dụng cụ võ thuật</h5>
+            <p style="text-align: justify;">
+                Gồm các dụng cụ dùng tập luyện cho các môn võ thuật như boxing, kickboxing, muay Thai, karate, taekwondo, judo… Ngoài ra, chúng tôi cũng cung cấp cả các <a class="text-decoration-none" href="">dụng cụ tập võ thuật</a> tăng cường thể lực, phụ kiện bảo vệ khỏi chấn thương khi thi đấu tập luyện.
+            </p>
+            <h5 class="fw-bold">3.5. Dụng cụ bóng bàn</h5>
+            <p style="text-align: justify;">
+                Bộ <a class="text-decoration-none" href="">môn bóng bàn</a>phổ biến được nhiều người chơi, tại Thiên Trường có đầy đủ các thiết bị phục vụ nhu cầu chơi giải trí, tập luyện và cả thi đấu chuyên nghiệp: <a href="">bàn bóng bàn</a>, vợt bóng bàn, quả bóng bàn, lưới, máy bắn bóng bàn… 
+            </p>
+            <h5 class="fw-bold">3.6. Thiết bị thể thao trường học</h5>
+            <p style="text-align: justify;">
+                -Với <a class="text-decoration-none" href="">dụng cụ thể thao trường học</a>, không chỉ đầy đủ mẫu mã mà các sản phẩm còn đảm bảo đạt đủ tiêu chuẩn giảng dạy các cấp theo quy định của Bộ Giáo dục.
+            </p>
+            <h5 class="fw-bold">3.7. Dụng cụ thể thao ngoài trời</h5>
+            <p style="text-align: center;">
+                <img src="../img/thien-truong-cung-cap-thiet-bi-the-duc-ngoai-troi.jpg" alt="" style="max-width: 100% !important;">
+            </p>
+            <p style="text-align: justify;">
+                <a href="" class="text-decoration-none">Thiết bị tập thể dục ngoài trời</a> Thiết bị tập thể dục ngoài trời ngày càng phổ biến, sử dụng tại nhiều không gian như công viên, sân thể thao, trường học, khu quân sự, sân vườn, chung cư… Các dòng máy tập có nhiều kiểu đa dạng bài tập: đi bộ trên không, xoay eo, ép - đẩy ngực, đạp xe, tập lưng bụng, tập chân, massage lưng, tập xà đơn… và cả tập toàn thân.
+            </p>
+            <h5 class="fw-bold">3.8. Cúp - Huy chương - Cờ lưu niệm</h5>
+            <p style="text-align: justify;">
+                Thể thao Thiên Trường nổi tiếng là đơn vị uy tín chuyên cung cấp cúp lưu niệm, <a href="">huy chương</a>, <a href="">cờ lưu niệm</a> cho các giải đấu, sự kiện, lễ kỷ niệm, lễ vinh danh… Chúng tôi cũng hỗ trợ in ấn, thiết kế theo yêu cầu, mẫu mã phong phú.
+            </p>
+            <h5 class="fw-bold">3.9. Sàn thể thao, Bảng điểm, Ghế khán đài</h5>
+            <p style="text-align: justify;">
+                - Thảm sân thể thao tại Thiên Trường được làm từ nhiều chất liệu như PVC hoặc EVA + PE có độ dày lớn, khả năng chống trơn trượt, trầy xước tốt và bền màu. Tính đàn hồi tạo độ êm, mềm mà không bị lún xẹp.
+            </p>
+            <p style="text-align: justify;">
+                - Thảm cỏ nhân tạo có độ bám ổn định, bóng khi nảy trên mặt thảm tương tự như sân cỏ tự nhiên.
+            </p>
+            <p style="text-align: justify;">
+                - Thảm cỏ nhân tạo có độ bám ổn định, bóng khi nảy trên mặt thảm tương tự như sân cỏ tự nhiên.
+            </p>
+            <p style="text-align: justify">
+                - Bảng điểm giúp trọng tài, người thi đấu và cả khán giả đều có thể dễ dàng theo dõi kết quả của trận đấu. <a class="text-decoration" href="">Bảng điểm thể thao</a> tại Việt Nam chủ yếu là loại lật tay.
+            </p>
+            <p style="text-align: justify;">
+                - <a class="text-decoration-none" href="">Ghế khán đài</a> trên sân vận động, nhà thi đấu có các loại tựa lưng cao, tựa lưng trung, tựa lưng thấp, ghế khán đài loại mặt, ghế khán đài lưng tựa gấp mở.
+            </p>
+            <h5 class="fw-bold">
+                3.10. Dụng cụ tập các môn thể thao khác
+            </h5>
+            <div class="container">
+                <div class="row border border-bottom-0 ">
+                    <div class="col border-end p-3">
+                        <a class="text-decoration-none fw-bold my" href="">Bóng đá</a>: quả bóng đá, khung thành, lưới, áo, bảng thay người.
+                    </div>
+                    <div class="col p-3">
+                        <a class="text-decoration-none fw-bold" href="">Cầu lông</a>: vợt quả cầu máy căng vợt, dây đan vợt, thảm sân, trụ - lưới.
+                    </div>
+                </div>
+                <div class="row border border-bottom-0 ">
+                    <div class="col border-end p-3">
+                        <a class="text-decoration-none fw-bold my" href="">Bóng đá</a>: quả bóng đá, khung thành, lưới, áo, bảng thay người.
+                    </div>
+                    <div class="col p-3">
+                        <a class="text-decoration-none fw-bold" href="">Cầu lông</a>: vợt quả cầu máy căng vợt, dây đan vợt, thảm sân, trụ - lưới.
+                    </div>
+                </div>
+                <div class="row border border-bottom-0 ">
+                    <div class="col border-end p-3">
+                        <a class="text-decoration-none fw-bold my" href="">Bóng rổ</a>: quả bóng rổ, trụ bóng rổ, thảm sân, bảng bóng rổ, xe đựng bóng, bảng điểm.
+                    </div>
+                    <div class="col p-3">
+                        <a class="text-decoration-none fw-bold" href="">Bơi lội</a>: kính bơi, mũ bơi, phao bơi, bể bơi phao, bịt tai, quần bơi, chân vịt.
+                    </div>
+                </div>
+                <div class="row border border-bottom-0 ">
+                    <div class="col border-end p-3">
+                        <a class="text-decoration-none fw-bold my" href="">Bóng chày</a>: gậy bóng chày, quả bóng chày, găng tay.
+                    </div>
+                    <div class="col p-3">
+                        <a class="text-decoration-none fw-bold" href="">Pickleball</a>: vợt pickleball, trụ lưới, bóng pickleball.
+                    </div>
+                </div>
+                <div class="row border border-bottom">
+                    <div class="col border-end p-3">
+                        <a class="text-decoration-none fw-bold my" href="">Bi lắc - Bi a</a>: bàn đánh bi lắc, bida.
+                    </div>
+                    <div class="col p-3">
+                        <a class="text-decoration-none fw-bold" href="">Yoga</a>: thảm tập, bóng tập yoga, đĩa tập thăng bằng, đĩa trượt, vòng yoga, bục tập.
+                    </div>
+                </div>
+            </div>
+            <h5 class="fw-bold">4 - Giá trị cốt lõi và cam kết chất lượng sản phẩm</h5>
+            <p style="text-align: center;">
+                <img src="../img/gia-tri-cot-loi-the-thao-thien-truong.jpg" alt="" style="max-width: 100% !important;"><br>
+                <i>Giá trị cốt lõi Công ty Thể theo Thiên Trường hướng đến</i>
+            </p>
+            <p class="fw-bold">&#8226; Cam kết chất lượng sản phẩm</p>
+            <p style="text-align: justify;">
+                Sứ mệnh của Thiên Trường không chỉ mang thể thao đến cho mọi người mà mục tiêu hướng đến còn là phát triển bền vững. Chính vì vậy, chúng tôi cam kết các sản phẩm cung cấp đến khách hàng đảm bảo chất lượng tốt nhất, chuẩn quy định về mẫu mã và an toàn trong thể thao. 
+            </p>
+            <p style="text-align: justify;">
+                Dụng cụ - thiết bị thể dục đều có nguồn gốc xuất xứ rõ ràng, đầy đủ giấy tờ chính hãng từ nhà sản xuất. Mọi thông tin về sản phẩm đều đầy đủ trên website để quý khách có thể tìm hiểu trước. Nếu xuất hiện vấn đề liên quan đến sản phẩm, Thiên Trường luôn sẵn sàng hỗ trợ mọi lúc.
+            </p>
+            <h5 class="fw-bold">5 - Khách hàng và thị trường mục tiêu</h5>
+            <p style="text-align: justify;">
+                Với 14 năm kinh doanh, khách hàng đến với Thiên Trường Sport có đủ mọi lứa tuổi, từ học sinh sinh viên đến người lớn tuổi và các khách hàng cá nhân, gia đình đến các doanh nghiệp lớn.
+            </p>
+            <p style="text-align: justify;">
+                Với mục tiêu kết nối cộng động người yêu thể thao tại Việt Nam, chúng tôi muốn hướng đến nhiều hơn nữa những người muốn rèn luyện thể thao, để có một sức khỏe tốt hơn cho bản thân và chung tay phát triển đất nước Việt Nam ngày một tốt đẹp và phồn vinh. 
+            </p>
+            <p style="text-align: center;">
+                <img src="../img/thien-truong-phuc-vu-moi-doi-tuong-khach-hang.jpg" alt="" style="max-width: 100% !important;">
+            </p>
+            <h5 class="fw-bold">6 - Hệ thống cửa hàng thể thao trên toàn quốc</h5>
+            <p style="text-align: justify;">
+                <b>Shop thể thao Thiên Trường</b> có hệ thống cửa hàng trên toàn quốc tại 6 tỉnh thành, giúp khách hàng dễ dàng mua, thời gian giao hàng cũng nhanh chóng hơn. 
+            </p>
+            <p style="text-align: justify;"><b>&#8226; Cam kết chất lượng sản phẩm</b></p>
+            <p style="text-align: justify;">- Chi nhánh Hà Nội</p>
+            <p style="text-align: justify;">+ Địa chỉ: 208D Lê Trọng Tấn, phường Khương Mai, quận Thanh Xuân.</p>
+            <p style="text-align: justify;">+ SĐT: 0983 080 786 (Mr Quân) - 0916 131 402 (Mr Hùng).</p>
+            <p style="text-align: justify;">- Chi nhánh Hải Phòng</p>
+            <p style="text-align: justify;">+ Địa chỉ: 238 Hàng Kênh, quận Lê Chân, Hải Phòng.</p>
+            <p style="text-align: justify;">+ SĐT: 079 438 5555 (Mr Tuấn Anh) - 0968 887 488 (Ms Hằng).</p>
+            <p style="text-align: justify;">- Chi nhánh Nam Định</p>
+            <p style="text-align: justify;">+ Địa chỉ: 522 Trần Hưng Đạo, phường Lộc Vượng, TP Nam Định.</p>
+            <p style="text-align: justify;">+ SĐT: 0987 883 956 (Ms Hồng).</p>
+            <p style="text-align: justify;"><b>&#8226; Khu vực miền Trung - Chi nhánh Đà Nẵng</b></p>
+            <p style="text-align: justify;">+ Địa chỉ: 657 Trần Cao Vân, quận Thanh Khê, Đà Nẵng.</p>
+            <p style="text-align: justify;">+ SĐT: 0944 086 000 (Ms Thủy) - 0236 3622 777 (Hotline).</p>
+            <p style="text-align: justify;"><b>&#8226; Khu vực miền Nam</b></p>
+            <p style="text-align: justify;">- Chi nhánh Hồ Chí Minh</p>
+            <p style="text-align: justify;">+ Địa chỉ: 323 Trần Văn Kiểu, Phường 11, Quận 6, TP Hồ Chí Minh.</p>
+            <p style="text-align: justify;">+ SĐT: 094 979 2525 (Mr Nguyện) - 0987 190 944 (Ms Hạnh).</p>
+            <p style="text-align: justify;">- Chi nhánh Đồng Nai</p>
+            <p style="text-align: justify;">+ Địa chỉ: QL1A, cầu Suối Cát, huyện Xuân Lộc.</p>
+            <p style="text-align: justify;">+ SĐT: 0972 147 205 - 0944 871 886.</p>
+            <h5 style="text-align: justify;">II - Những thành tựu công ty thể thao Thiên Trường đạt được</h5>
+            <h5 style="text-align: justify;">1 - Đội ngũ nhân sự</h5>
+            <p style="text-align: justify;">Đội ngũ nhân sự tại Công ty Thể thao Thiên Trường đều là những người có chuyên môn, đào tạo bài bản nghiệp vụ nên chắc chắn sẽ khiến bạn hài lòng với quy trình phục vụ. Sự nhiệt tình, tâm huyết và chuyên nghiệp là niềm tự hào mà chúng tôi tin tưởng khách hàng sẽ yên tâm chọn lựa và tìm đến.</p>
+            <p style="text-align: justify;">Làm việc tại Thiên Trường Sport, chúng tôi liên tục có các chính sách đào tạo để chất lượng nhân sự được nâng cao và phát triển:</p>
+            <p style="text-align: justify;">- Đào tạo chuyên sâu kiến thức nghiệp vụ cho đội ngũ nhân viên.</p>
+            <p style="text-align: justify;">- Có các buổi đào tạo, chia sẻ kinh nghiệm để học hỏi và tiếp thu kiến thức mới.</p>
+            <p style="text-align: justify;">- Hỗ trợ chi phí cho nhân viên có nhu cầu tham gia các khóa đào tạo phát triển năng lực.</p>
+            <h5 style="text-align: justify;">2 - Thành tích và đánh giá từ khách hàng</h5>
+            <p style="text-align: justify;"><b>&#8226; Thành tích Thiên Trường Sport đã đạt được</b></p>
+            <p style="text-align: center;">
+                <img src="../img/thien-truong-nhan-giai-thuong-hieu-xuat-sac-chau-a.jpg" alt="" style="max-width: 100% !important;">
+            </p>
+            <p style="text-align: justify;">Sau hơn 12 năm xây dựng và phát triển, tháng 7 năm 2022, Thiên Trường vinh dự được trao tặng giải thưởng Thương hiệu Xuất sắc Châu Á. Đây là danh hiệu trao thưởng cho các doanh nghiệp nổi bật, có sản phẩm dịch vụ chất lượng tốt vì người tiêu dùng. Giải thưởng do Viện nghiên cứu kinh tế Châu Á đánh giá và xem xét rất kỹ lưỡng.</p>
+            <p style="text-align: justify;"><b>&#8226; Đánh giá từ khách hàng khi dùng sản phẩm của Thiên Trường</b></p>
+            <p style="text-align: justify;">Luôn nhận được sự tin tưởng và lựa chọn từ khách hàng trên toàn quốc, các sản phẩm từ Thiên Trường cung cấp đều tự tin có chất lượng đảm bảo, đáp ứng tốt nhu cầu sử dụng. Sự hài lòng, góp ý từ quý khách chính là động lực để Thiên Trường không ngừng cải thiện tốt hơn. Chúng tôi xin được trích dẫn một vài đánh giá:</p>
+            <p style="text-align: justify;">- Anh Tuấn Minh (Đống Đa, Hà Nội) chia sẻ: “Tôi là gymer chuyên nghiệp nên khá chú trọng đến khâu đầu tư thiết bị tập tại nhà. Biết đến Thiên Trường qua anh em giới thiệu nên cũng yên tâm, đặt trước con giàn HQ-368 xem thế nào. Sử dụng được một thời gian rồi thấy cực hài lòng, con máy xịn sò tập cơ toàn diện, khá êm không gây ồn. Chắc không chần chừ mua thêm vài con máy nữa tại đây cho đủ bộ.”</p>
+            <p style="text-align: center;">
+                <img src="../img/khach-hang-tap-luyen-voi-gian-ta-hq368.jpg" alt="" style="max-width: 100% !important;"><br>
+                <i>Hình ảnh anh Tuấn Minh hào hứng tập luyện với giàn tạ HQ-368</i>
+            </p>
+            <p style="text-align: justify;">- Anh Cường (Quảng Ninh) đầu tư phòng tập cho nhân viên tại văn phòng: “Trước đây mình đã mua thiết bị thể dục của Thiên Trường tập ở nhà cho gia đình. Dịp này đầu tư cho sức khỏe nhân viên hơn nên quyết định chọn luôn Thiên Trường, chất lượng thì khỏi bàn, giá cả hợp lý, có ưu đãi cho khách hàng. Mình đã sắm đủ máy chạy bộ, xe đạp trong nhà, ghế tập và giàn tạ. Các bạn hỗ trợ sắp xếp lắp đặt rất ưng mắt.”</p>
+            <p style="text-align: center;">
+                <img src="../img/lap-dat-may-tap-the-hinh-tai-van-phong.jpg" alt="" style="max-width: 100% !important;"><br>
+                <i>Khách hàng đầu tư thiết bị tập thể dục cho nhân viên tại văn phòng</i>
+            </p>
+            <h5 style="text-align: justify;">3 - Đối tác khách hàng và công trình thi công tiêu biểu</h5>
+            <p style="text-align: justify;">Công ty TNHH Thể thao Thiên Trường nhận được sự tin tưởng từ hàng ngàn khách hàng và đối tác trong nước. Tiêu biểu trong số đó chúng tôi xin được liệt kê: </p>
+            <p style="text-align: justify;">- Học viện Kỹ thuật Quân sự, Đại học Kinh tế Quốc dân, Đại học Thể dục Thể thao Bắc Ninh, Đại học Hải Phòng, Đại học Ngân hàng TP Hồ Chí Minh, Trường Marie Curie, THPT Phan Chu Trinh (Đắk Lắk), trường mầm non quận Cầu Giấy...</p>
+            <p style="text-align: justify;">- Nhà thi đấu lao động tỉnh Hưng Yên, Nhà thi đấu đa năng tỉnh Bình Phước, Nhà thi đấu khu đô thị Thanh Hà…</p>
+            <p style="text-align: justify;">- Bệnh viện Trung ương Quân đội 108, Công viên TP Bắc Giang, Công an tỉnh Lâm Đồng, Bộ CHQS tỉnh Bắc Giang.</p>
+            <p style="text-align: justify;">- Công ty JA Solar, Công ty Điện lực tỉnh Điện Biên…</p>
+            <h5 style="text-align: justify;">III - Thông tin liên hệ chính thức và chính sách thanh toán</h5>
+            <p style="text-align: justify;"><b>&#8226; Thông tin liên hệ chính thức tới Công ty Thể thao Thiên Trường</b></p>
+            <p style="text-align: justify;">- SĐT: 0243 566 7337.</p>
+            <p style="text-align: justify;">- Hotline: <b>09686 50686.</b></p>
+            <p style="text-align: justify;">- Email: info@thethaothientruong.vn</p>
+            <p style="text-align: justify;"><b>Kênh thông tin chính thức:</b></p>
+            <p style="text-align: justify;">- Facebook: <a class="text-decoration-none" href="https://www.facebook.com/thethaothientruong.vn">https://www.facebook.com/thethaothientruong.vn</a></p>
+            <p style="text-align: justify;">- Website: <a class="text-decoration-none" href="home.html">https://www.thethaothientruong.vn/</a></p>
+            <p style="text-align: justify;">- Youtube: <a class="text-decoration-none" href="https://www.youtube.com/@ThaoThe"></a>https://www.youtube.com/@ThaoThe</p>
+            <p style="text-align: justify;"><b>&#8226; Chính sách vận chuyển và thanh toán tại Thiên Trường</b></p>
+            <p style="text-align: justify;"><i>- Chính sách vận chuyển</i></p>
+            <p style="text-align: justify;">+ Khách hàng trong khu vực nội thành các tỉnh, thành phố có chi nhánh Thiên Trường sẽ được vận chuyển ngay trong ngày với khách hàng đặt mua trước 3 giờ chiều (15 giờ) của ngày hôm đó. Hàng hóa không cồng kềnh giá trị trên 3 triệu sẽ được miễn phí vận chuyển.</p>
+            <p style="text-align: justify;">+ Với các sản phẩm có kích thước cồng kềnh, chi phí giao hàng sẽ được tính theo từng vị trí cụ thể và hình thức vận chuyển.</p>
+            <p style="text-align: justify;">+ Phương thức vận chuyển tại Thiên Trường đa dạng: nhân viên giao nhận riêng của Thiên Trường, chuyển phát nhanh, gửi qua ô tô, chuyển tàu…</p>
+            <p style="text-align: justify;">+ Thời gian vận chuyển: Từ 1 - 7 ngày, với các mặt hàng cồng kềnh thời gian giao hàng có thể lâu hơn.</p>
+            <p style="text-align: justify;"><i>- Phương thức thanh toán tại Thiên Trường</i></p>
+            <p style="text-align: justify;">+ Thanh toán tiền mặt trực tiếp tại cửa hàng hoặc cho đơn vị vận chuyển.</p>
+            <p style="text-align: justify;">+ Chuyển khoản qua tài khoản ngân hàng, Internet Banking.</p>
+            <p style="text-align: justify;"><b>>>> Xem chính sách thanh toán chi tiết</b> tại <a class="text-decoration-none" href="van-chuyen-thanh-toan.html">https://www.thethaothientruong.vn/van-chuyen-thanh-toan/</a></p>
+
+        </div>
+    </section>
+    <footer class="container-xxl mt-4 p-0">
+        <div class="container-fluid bg-white py-5">
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-danger">CHI NHÁNH SHOWROOM CỬA HÀNG DỤNG CỤ THỂ THAO THIÊN TRƯỜNG</h5>
+                    <div class="row row-cols-xl-3 row-cols-lg-3 row-cols-sm-2">
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Hà Nội</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>208D Lê Trọng Tấn, Quận Thanh Xuân</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Mr Quân:</span>
+                                        <span class="text-danger" role="button">0983 080 786</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Mr Hùng:</span>
+                                        <span class="text-danger" role="button">0916 131 402 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Tp. Hồ Chí Minh</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>323 Trần Văn Kiểu, Phường 11, Quận 6</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Mr Nguyện:</span>
+                                        <span class="text-danger" role="button">094 979 25 25</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Hạnh:</span>
+                                        <span class="text-danger" role="button">0987 190 944 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Đà Nẵng</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>657 Trần Cao Vân, Quận Thanh Khê</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Thủy:</span>
+                                        <span class="text-danger" role="button">0944 086 000 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Hotline:</span>
+                                        <span class="text-danger" role="button">0236.3622.777</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Nam Định</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>522 Trần Hưng Đạo, Phường Lộc Vượng</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Hồng:</span>
+                                        <span class="text-danger" role="button">0987 883 956 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Hải Phòng</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>238 Hàng Kênh, Quận Lê Chân</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Tuấn Anh:</span>
+                                        <span class="text-danger" role="button">079 438 5555 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Hằng:</span>
+                                        <span class="text-danger" role="button">0968 887 488 (Zalo)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Đồng Nai</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>QL 1A, cầu Suối Cát, Huyền Xuân Lộc</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Hotline1:</span>
+                                        <span class="text-danger" role="button">0972 147 205</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Hotline2:</span>
+                                        <span class="text-danger" role="button">0944 871 886</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="none-visible-xl col-4">
+                    <h5 class="text-danger">THIÊN TRƯỜNG CHANEL</h5>
+                    <div role="button">
+                        <a href="https://www.youtube.com/watch?v=_rOFf0lEutw" rel="nofollow">
+                            <img class="img-fluid" src="../img/cong-ty-the-thao-thien-truong.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row mt-4">
+                <div class="col-xl-6">
+                    <h6 class="fw-bolder mb-4">DỤNG CỤ THỂ THAO THIÊN TRƯỜNG SPORT</h6>
+                    <p class="shop-info"><b>Thiên Trường Sport</b> là đơn vị chuyên nhập khẩu, phân phối, bán buôn, bán lẻ
+                        <b>dụng vụ thể dục thể thao</b> và thể hình uy tín nhất tại Việt Nam. Toàn bộ sản phẩm
+                        do Thiên Trường cung cấp đều đảm bảo chính hãng, thông tin và giá
+                        <b>bán dụng cụ thể thao</b> được niêm yết, đảm bảo quyền lợi của Quý Khách hàng.
+                    </p>
+                    <div class="fw-normal">
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span>208D Lê Trọng Tấn, Thanh Xuân, Hà Nội</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-danger" role="button">0243 566 7337</span>
+                        </p>
+                        <p class="m-0 mb-3">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="fw-bolder mb-4">VỀ CHÚNG TÔI</h6>
+                            <p class="shop-info m-1"><a href="../html/gioithieu.html" class="footer-link text-decoration-none">Giới thiệu</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Hệ thống đại lý</a></p>
+                            <p class="shop-info m-1"><a href="../html/van-chuyen-thanh-toan.html" class="footer-link text-decoration-none">Vận chuyển & Thanh toán</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Phương thức thanh toán</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chính sách bảo hành</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chính sách đổi trả</a></p>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-bolder mb-4">SẢN PHẨM</h6>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Ghế tập tạ</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Giàn tạ đa năng</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Ghế tập bụng</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Bao cát đấm bốc</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Bàn bóng bàn</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Máy tập chân</a></p>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-bolder mb-4">KIẾN THỨC</h6>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Hít đất đúng cách</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Cách tập hít xà đơn</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Tập Gym giảm cân</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chạy bộ giảm cân</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Nhảy dây giảm cân</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chiều cao lưới bóng chuyền</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="left-contact position-fixed">
+        <div class="messenger fs-2 text-white d-flex justify-content-center align-content-center rounded-circle"  data-bs-toggle="tooltip" data-bs-placement="top" title="Nhắn tin cho chúng tôi qua Facebook">
+            <i class="bi bi-messenger"></i>
+        </div>
+        <div class="geo-alt fs-2 text-white bg-info d-flex justify-content-center align-content-center rounded-circle mt-3"  data-bs-toggle="tooltip" data-bs-placement="top" title="Liên hệ">
+            <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="scroll-to-top fs-5 text-white d-flex justify-content-center align-items-center rounded-circle mt-3" role="button">
+            <i class="bi bi-caret-up-fill m-0 p-0 position-absolute"></i>
+            <span class="m-0 p-0 position-absolute">TOP</span>
+        </div>
+    </div>
+    <div class="gray-background z-2">
+    </div>  
+    <div class="he-thong-cua-hang position-fixed z-3 bg-white">
+        <h3 class="text-center py-4 border-bottom text-danger">DANH SÁCH CỬA HÀNG THỂ THAO THIÊN TRƯỜNG 
+            <div class="close-btn-he-thong-cua-hang rounded-circle m-0 p-0 btn btn-light text-dark" role="button"><span>x</span></div>
+        </h3>
+        <div class="row m-0 p-0">
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-ha-noi.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold">Hà Nội</h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">208D Lê Trọng Tấn, Thanh Xuân</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0243 566 7337</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-tphcm.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold">Tp. Hồ Chí Minh</h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">323 Trần Văn Kiểu, Quận 6</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0286 290 1232</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0">
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-da-nang.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold"></h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">657 Trần Cao Vân, Quận Thanh Khê</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">02363 622 777</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-nam-dinh.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold">Nam Định</h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">522 Trần Hưng Đạo, P Lộc Vương</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0987 833 956</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0">
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../img/thien-truong-sport-hai-phong-1.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold"></h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">238 Hàng Kênh, Quận Lê Chân</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0968 887 488</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tim-kiem position-fixed z-3">
+        <div class="tim-kiem-close-btn position-absolute">
+            <span class="">x</span>
+        </div>
+        <div class="floating-search-bar input-group">
+            <input type="text" class="border-0 px-2" placeholder="Từ khóa tìm kiếm...">
+            <button class="text-danger border-0 px-2">
+                <i class="bi bi-search"></i>
+                Tìm kiếm
+            </button>
+        </div>
+    </div>
+</body>
+</html>

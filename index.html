@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../BaiTapLon_WithBootstrap5/Bootstrap5/css/bootstrap.min.css">
+    <script src="../BaiTapLon_WithBootstrap5/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="../BaiTapLon_WithBootstrap5/jquery-3.7.1/jquery.js"></script>
+    <link rel="stylesheet" href="../BaiTapLon_WithBootstrap5/css/header.css">
+    <link rel="stylesheet" href="../BaiTapLon_WithBootstrap5/css/aside.css">
+    <link rel="stylesheet" href="../BaiTapLon_WithBootstrap5/css/general.css">
+    <link rel="stylesheet" href="../BaiTapLon_WithBootstrap5/css/body.css">
+    <link rel="stylesheet" href="../BaiTapLon_WithBootstrap5/css/footer.css">
+    <script src="../BaiTapLon_WithBootstrap5/js/header.js"></script>
+    <script src="../BaiTapLon_WithBootstrap5/js/general.js"></script>
+    <link rel="stylesheet" href="../BaiTapLon_WithBootstrap5/bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="p-0 m-0 bg-body-secondary">
+    <header class="header container-fluid p-0 top-0 bg-white position-absolute z-1">
+        <nav class="top-header nav bg-danger p-0 justify-content-end">
+            <a href="../BaiTapLon_WithBootstrap5/html/gioithieu.html" class="nav-link text-white">
+                Giới thiệu
+            </a>
+            <a href="../BaiTapLon_WithBootstrap5/html/van-chuyen-thanh-toan.html" class="nav-link text-white">
+            Vận chuyển & Thanh toán
+            </a>
+            <a href="" class="nav-link text-white">
+                Dự án
+            </a>
+            <a href="" class="nav-link text-white">
+                Tư vấn mua hàng
+            </a>
+            <a href="" class="nav-link text-white">
+                Tin tức
+            </a>
+            <a href="" class="nav-link text-white">
+                Tuyển dụng
+            </a>
+            <a href="../BaiTapLon_WithBootstrap5/html/lien-he.html" class="nav-link text-white me-5">
+                Liên hệ
+            </a>
+        </nav>
+        <div class="second-header bg-white container-fluid">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="p-2 w-25 d-flex flex-shrink-0 flex-grow-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Dụng Cụ Thể Thao - Cửa Hàng Thể Thao Uy Tìn, Giá Tốt">
+                    <a href="../BaiTapLon_WithBootstrap5/index.html">
+                        <img class="logo img-fluid" src="../BaiTapLon_WithBootstrap5/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="p-2 d-flex flex-grow-1 flex-shrink-1">
+                    <div class="middle-section input-group">
+                        <input type="text" class="form-control w-auto d-flex flex-grow-1" placeholder="Từ khóa tìm kiếm...">
+                        <div class="tim-kiem-btn span input-group-text text-danger" role="button">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <span class="px-1">Tìm kiếm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section p-2 row">
+                    <div id="he-thong-cua-hang-btn" class="container col d-flex align-items-center" role="button">
+                        <div class="col h-100 p-0 m-0 d-flex align-items-center">
+                            <ion-icon class="fs-2 text-danger" name="location-sharp"></ion-icon>
+                        </div>
+                        <div class="col p-0 m-0">
+                            <div class="row fw-bold">Hệ thống</div>
+                            <div class="row fw-normal">Cửa hàng</div>
+                        </div>
+                    </div>
+                    <div class="container col" role="button">
+                        <a class="text-dark text-decoration-none" href="../BaiTapLon_WithBootstrap5/html/gio-hang.html">
+                            <div class="d-flex align-items-center">
+                                <div class="col h-100 p-0 m-0 d-flex align-items-center">
+                                    <ion-icon class="fs-2 text-danger" name="cart"></ion-icon>
+                                </div>
+                                <div class="col p-0 m-0">
+                                    <div class="row fw-bold">Giỏ hàng</div>
+                                    <div class="row fw-normal">0đ</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-xs ms-5 visible-xs">
+                    <div class="search-btn rounded-3 visible-xs" role="button">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-list container-fluid border border-start-0 border-end-0">
+                <ul class="sub-menu-list nav container d-flex align-items-center my-0" style="font-size: 12.45px;">
+                    <li class="nav-item border-end">
+                        <a href="../BaiTapLon_WithBootstrap5/index.html" class="nav-link text-danger">
+                            <ion-icon name="home"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            MÁY CHẠY BỘ
+                        </a>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            MÁY TẬP THỂ DỤC
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Xe Đạp Tập Thể Dục
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Máy Tập Cơ Bụng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Thiết Bị Phục Hồi Chức Năng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Xe Đạp Tập Thể Dục
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ VÕ THUẬT
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Đích Đá - Đích Đấm Boxing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Găng Tay Boxing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Trụ & Bao Cát Đấm Bốc
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Thiết Bị Bảo Hộ Võ Thuật
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Dụng Cụ Tập Thể Lực
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Côn Nhị Khúc
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ TẬP GYM
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Giàn Tạ Đa Năng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Ghế Tập Tạ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Xà Đơn - Xà Kép
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Tạ Tay - Tạ Đơn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Ghế Tập Bụng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Phụ Kiện Tập Gym
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ BÓNG BÀN
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Bàn Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Quả Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Lưới Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Vợt Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Cốt Vợt Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Mặt Vợt Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Máy Bắn Bóng Bàn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">
+                                    Phụ Kiện Bóng Bàn
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            THIẾT BỊ DẠY HỌC
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Giáo Dục Thể Chất Thông Tư 38 39 40</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border border-top-0 border-bottom-0">
+                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DỤNG CỤ NGOÀI TRỜI
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên HQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa (Trụ Đôi)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa (Trụ Đơn D140)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Tập Chung Cư - Sân Vườn Vifa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Vifa (Trụ Đơn D114)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Tập Công Viên Sodex Sport</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border-start">
+                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-dark px-3 m-0 fw-semibold">
+                            DANH MỤC KHÁC
+                            <ion-icon name="caret-down"></ion-icon>
+                        </a>
+                        <ul class="sub-menu-list-2 nav flex-column position-absolute bg-dark">
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Ghế Massage</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Tập Yoga <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Thảm Tập Yoga</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Bóng Tập Yoga</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Bàn Bi Lắc</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Phòng Gym <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Tập Gym Impulse</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Đá</a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Quả Bóng Đá</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Khung Thành và Lưới Bóng Đá</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Phụ Kiện Bóng Đá</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Cầu Lông <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông Yonex</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Thảm Sân Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dây Đan Vợt Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Quả Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông Proace</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Vợt Cầu Lông Tập Luyện</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Căng Vợt Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Trụ - Lưới Cầu Lông</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Máy Bắn Cầu Lông</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Rổ</a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Trụ - Vành - Lưới Bóng Rổ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Quả Bóng Rổ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Phụ Kiện Bóng Rổ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Chuyền <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Quả Bóng Chuyền</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Trụ và Lưới Bóng Chuyền</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Phụ Kiện Bóng Chuyền</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bóng Chày</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Tennis - Pickleball <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Trụ Tennis - Lưới Tennis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Bóng Tennis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Pickleball Niupipo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Pickleball Boer Sport</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Bóng Pickleball</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Trụ Lưới Pickleball</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Pickleball AMA Sport</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Vợt Pickleball</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Bơi Lội <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Kính Bơi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Mũ Bơi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Bể Bơi - Phao Bơi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Cúp - Huy Chương - Kỷ Niệm Chương <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Cúp Thể Thao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Huy Chương Thể Thao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Cúp Pha Lê</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Cờ Lưu Niệm</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Tập Thể Dục Thẩm Mỹ</a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ Thể Thao Adidas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Dụng Cụ SVĐ - Nhà Thi Đấu <span class="float-end"><i class="bi bi-caret-right-fill"></i></span></a>
+                                <ul class="sub-menu-list-3 nav flex-column position-absolute bg-dark">
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Sàn Thể Thao</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Ghế Khán Đài</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BaiTapLon_WithBootstrap5/html/may-chay-bo.html" class="nav-link text-white">Bảng Điểm Thể Thao</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class=" p-0">
+        <div class="container-xl container-xxl">
+            <div class="row">
+                <div class="col-8 p-0 pe-1 m-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="../BaiTapLon_WithBootstrap5/img/ban-bong-ban-thien-truong.jpg" class="d-block" style="height: 438px;" alt="..." role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Bàn Bóng Bàn">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../BaiTapLon_WithBootstrap5/img/banner-8-3.jpg" class="d-block" style="height:438px;" alt="..." data-bs-toggle="tooltip" role="button" data-bs-placement="top" title="Banner 8/3">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../BaiTapLon_WithBootstrap5/img/gian-ta-da-nang-thien-truong.jpg" class="d-block" style="height:438px;" alt="..." role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Giàn Tạ Đa Năng Thiên Trường">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../BaiTapLon_WithBootstrap5/img/may-chay-bo-thien-truong(2).jpg" class="d-block" style="height:438px;" alt="..." role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Máy Chạy Bộ Tại Nhà">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../BaiTapLon_WithBootstrap5/img/xe-dap-tap-the-duc-tai-nha.jpg" class="d-block" style="height:438px;" alt="..." role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Xe Đạp Tập Thể Dục Tại Nhà">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                </div>
+                <div class="col-4 p-0 m-0 h-100">
+                    <div class="banner row p-0 m-0" style="height:219.1px;">
+                        <img class="h-100 p-0 m-0" src="../BaiTapLon_WithBootstrap5/img/banner-gt.jpg" alt="" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Giàn Tạ Đa Năng HQ-908S">
+                    </div>
+                    <div class="banner row p-0 m-0 pt-1" style="height:219.1px;">
+                        <img class="h-100 p-0 m-0" src="../BaiTapLon_WithBootstrap5/img/banner-gtb.jpg" alt="" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Ghế Tập Tạ Đa Năng">
+                    </div>
+                </div>
+            </div>
+            <div class="info-benefit row border mt-0 bg-white border-secondary-subtle">
+                <div class="col p-0 m-0 border-end border-secondary-subtle">
+                    <div class="d-flex justify-content-center align-items-center p-0 m-0 h-100">
+                        <i class="bi bi-truck text-danger p-0 m-0"></i>
+                        <span class="m-2 p-0 fw-semibold">VẬN CHUYỂN TOÀN QUỐC</span>
+                    </div>
+                </div>
+                <div class="col p-0 m-0 border-end border-secondary-subtle">
+                    <div class="d-flex justify-content-center align-items-center p-0 m-0 h-100">
+                        <i class="bi bi-credit-card text-danger p-0 m-0"></i>
+                        <span class="m-2 p-0 fw-semibold">THANH TOÁN TIỆN LỢI</span>
+                    </div>
+                </div>
+                <div class="col p-0 m-0 border-end border-secondary-subtle">
+                    <div class="d-flex justify-content-center align-items-center p-0 m-0 h-100">
+                        <i class="bi bi-arrow-repeat text-danger p-0 m-0"></i>
+                        <span class="m-2 p-0 fw-semibold">MIỄN PHÍ ĐỔI TRẢ</span>
+                    </div>
+                </div>
+                <div class="col p-0 m-0 border-end border-secondary-subtle">
+                    <div class="d-flex justify-content-center align-items-center p-0 m-0 h-100">
+                        <i class="bi bi-chat-fill text-danger p-0 m-0"></i>
+                        <span class="m-2 p-0 fw-semibold">HỖ TRỢ 24/7</span>
+                    </div>
+                </div>
+                <div class="col p-0 m-0 ">
+                    <div class="d-flex justify-content-center align-items-center p-0 m-0 h-100">
+                        <i class="bi bi-hand-thumbs-up-fill text-danger p-0 m-0"></i>
+                        <span class="m-2 p-0 fw-semibold">SẢN PHẨM CHÍNH HÃNG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl bg-white mt-2 p-0">
+            <h5 class=" m-0 pt-3 pb-3 px-4 text-danger border-bottom border-danger fw-bold middle-content"><span class="text-danger" role="button">KHUYẾN MẠI HOT</span><span class="float-end text-dark-emphasis fs-6" role="button">XEM THÊM</span></h5>
+            <div class="row row-cols-xxl-5 m-0">
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex  justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white  position-absolute bg-danger">
+                        <span>-16%</span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/gia-de-ta.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Giá để tạ">
+                    </div>
+                    <div class="item-name text-center m-2">Giá để tạ</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(1 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            2,550,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            2,150,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden">-16%</div>
+                    <div class="container d-flex justify-content-centerr">
+                        <img src="../BaiTapLon_WithBootstrap5/img/Bao-dam-boxing-Star-Sport.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Bao đấm bốc Star Sport">
+                    </div>
+                    <div class="item-name text-center m-2">Bao đấm bốc Star Sport</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(32 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            
+                        </span>
+                        <span class="text-danger fw-bold">
+                            500,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-26%</div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/Tru-dam-boc-HuiJun-HJ-G070.jpg" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Trụ đấm bốc JuiJun HJ-G070">
+                    </div>
+                    <div class="item-name text-center m-2">Trụ đấm bốc HuiJun HJ-G070</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(4 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            6,100,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            4,500,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-15%</div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/Ghe-tap-ta-da-nang-T052-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Ghế tập tạ đa năng T058">
+                    </div>
+                    <div class="item-name text-center m-2">Ghế tập tạ đa năng T058</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(10 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            4,450,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            3,795,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-5%</div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/ghe-tap-gym-dds-1205.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Ghế tập Gym đa năng DDS-1205">
+                    </div>
+                    <div class="item-name text-center m-2">Ghế tập Gym đa năng DDS-1205</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(7 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            3,980,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            3,795,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-12%</div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/may-chay-bo-dien-sakura-hq-666-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Máy chạy bộ điện Sakura HQ-666">
+                    </div>
+                    <div class="item-name text-center m-2">Máy chạy bộ điện Sakura HQ-666</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(1 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            21,550,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            18,975,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden">-16%</div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/cup-luu-niem-cps-05.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Cúp lưu niệm CPS 05">
+                    </div>
+                    <div class="item-name text-center m-2">Cúp lưu niệm CPS 05</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(1 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            
+                        </span>
+                        <span class="text-danger fw-bold">
+                            550,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-16%</div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/cup-luu-niem-cps-06.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Cúp lưu niệm CPS 06">
+                    </div>
+                    <div class="item-name text-center m-2">Cúp lưu niệm CPS 06</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(1 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            
+                        </span>
+                        <span class="text-danger fw-bold">
+                            450,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-16%</div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/dung-cu-gap-bung.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Dụng cụ gập bụng">
+                    </div>
+                    <div class="item-name text-center m-2">Dụng cụ gập bụng</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(1 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            299,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            199,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">-16%</div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/ghe-massage-o-to-cp-910a.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Ghế massage ô tô CP-910A">
+                    </div>
+                    <div class="item-name text-center m-2">Ghế massage ô tô CP-910A</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(1 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            12,500,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            7,990,000đ
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl p-0 mt-2" role="button">
+            <a href="">
+                <img class="img-fluid w-100" src="../BaiTapLon_WithBootstrap5/img/giay-chung-nhan-iso-thien-truong(1).jpg" alt="">
+            </a>
+        </div>
+        <div class="container-xxl bg-white mt-2 p-0">
+            <h5 class=" m-0 pt-3 pb-3 px-4 text-danger border-bottom border-danger fw-bold middle-content"><span class="text-danger" role="button">DỤNG CỤ TẬP GYM</span><span class="float-end text-dark-emphasis fs-6" role="button">XEM THÊM</span></h5>
+            <div class="row row-cols-xxl-5 m-0">
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex  justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white  position-absolute bg-danger visually-hidden">
+                        <span>-16%</span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/Ta-tay-nhua.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Tạ tay nhựa">
+                    </div>
+                    <div class="item-name text-center m-2">Tạ tay nhựa (10.000/Kg)</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(165 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                        </span>
+                        <span class="text-danger fw-bold">
+                            10,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">
+                        <span>-20%</span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/ghe-tap-ta-da-nang-xuki.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Ghế tập tạ đa năng Xuki">
+                    </div>
+                    <div class="item-name text-center m-2">Ghế tập tạ đa năng Xuki</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(188 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            2,250,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            1,800,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden">
+                        <span></span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/ghe-tap-ta-Ben-601502-1.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Ghế tập tạ Ben 601502">
+                    </div>
+                    <div class="item-name text-center m-2">Ghế tập tạ Ben 601502</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(29 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            
+                        </span>
+                        <span class="text-danger fw-bold">
+                            7,189,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden">
+                        <span></span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/Ta-tay-Brosman.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Tạ tay Brosman">
+                    </div>
+                    <div class="item-name text-center m-2">Tạ tay Brosman (70.000/Kg)</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(23 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            
+                        </span>
+                        <span class="text-danger fw-bold">
+                            70,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">
+                        <span>-29%</span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/ta-tay-bowflex-552.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Tạ tay Bowflex 552">
+                    </div>
+                    <div class="item-name text-center m-2">Tạ tay Bowflex 552 (24kg/1 quả)</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(16 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            7,500,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            5,330,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">
+                        <span>-16%</span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/ta-tay-jordan.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Tạ tay Jordan">
+                    </div>
+                    <div class="item-name text-center m-2">Tạ tay Jordan (80.000/Kg)</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(75 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            95,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            80,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden">
+                        <span>-19%</span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/xa-don-treo-tuong-2018.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Xà đơn treo tường 2018">
+                    </div>
+                    <div class="item-name text-center m-2">Xà đơn treo tường 2018</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(2 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            320,000 đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            260,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger visually-hidden">
+                        <span></span>
+                    </div>
+                    <div class="container d-flex justify-content-center" role="button">
+                        <img src="../BaiTapLon_WithBootstrap5/img/xa-don-xa-kep-t056(1).jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Xà đơn, xà kép T056">
+                    </div>
+                    <div class="item-name text-center m-2">Xà đơn, xà kép T056</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(1 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            
+                        </span>
+                        <span class="text-danger fw-bold">
+                            3,130,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">
+                        <span>-21%</span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/gian-ta-da-nang-808p.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Giàn tạ đa năng HQ-808P">
+                    </div>
+                    <div class="item-name text-center m-2">Giàn tạ đa năng HQ-808P - Kèm ghế tạ</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="text-secondary">(15 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            19,500,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            15,450,000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="item border m-0 p-0 col border-end border-bottom" role="button">
+                    <div class="discount d-flex justify-content-center align-items-center rounded-circle ms-3 mt-3 text-white position-absolute bg-danger">
+                        <span>-21%</span>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <img src="../BaiTapLon_WithBootstrap5/img/gian-ta-da-nang-hq708.jpg" alt=""  data-bs-toggle="tooltip" data-bs-placement="top" title="Giàn tạ đa năng HQ-708">
+                    </div>
+                    <div class="item-name text-center m-2">Giàn tạ đa năng HQ-708</div>
+                    <div class="text-center m-2" style="font-size: 14px;">
+                        <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </span>
+                        <span class="text-secondary">(19 đánh giá)</span>
+                    </div>
+                    <div class="text-center m-2">
+                        <span class="text-decoration-line-through text-secondary me-1">
+                            12,500,000đ
+                        </span>
+                        <span class="text-danger fw-bold">
+                            9,900,000đ
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container-xxl mt-4 p-0">
+        <div class="container-fluid bg-white py-5">
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-danger">CHI NHÁNH SHOWROOM CỬA HÀNG DỤNG CỤ THỂ THAO THIÊN TRƯỜNG</h5>
+                    <div class="row row-cols-xl-3 row-cols-lg-3 row-cols-sm-2">
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Hà Nội</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>208D Lê Trọng Tấn, Quận Thanh Xuân</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Mr Quân:</span>
+                                        <span class="text-danger" role="button">0983 080 786</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Mr Hùng:</span>
+                                        <span class="text-danger" role="button">0916 131 402 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Tp. Hồ Chí Minh</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>323 Trần Văn Kiểu, Phường 11, Quận 6</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Mr Nguyện:</span>
+                                        <span class="text-danger" role="button">094 979 25 25</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Hạnh:</span>
+                                        <span class="text-danger" role="button">0987 190 944 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Đà Nẵng</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>657 Trần Cao Vân, Quận Thanh Khê</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Thủy:</span>
+                                        <span class="text-danger" role="button">0944 086 000 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Hotline:</span>
+                                        <span class="text-danger" role="button">0236.3622.777</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Nam Định</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>522 Trần Hưng Đạo, Phường Lộc Vượng</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Hồng:</span>
+                                        <span class="text-danger" role="button">0987 883 956 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-envelope text-danger"></i>
+                                        <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Hải Phòng</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>238 Hàng Kênh, Quận Lê Chân</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Tuấn Anh:</span>
+                                        <span class="text-danger" role="button">079 438 5555 (Zalo)</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Ms Hằng:</span>
+                                        <span class="text-danger" role="button">0968 887 488 (Zalo)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="container border-bottom">
+                                <h6>Đồng Nai</h6>
+                                <div class="address-info">
+                                    <p class="m-0">
+                                        <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        <span>QL 1A, cầu Suối Cát, Huyền Xuân Lộc</span>
+                                    </p>
+                                    <p class="m-0">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Hotline1:</span>
+                                        <span class="text-danger" role="button">0972 147 205</span>
+                                    </p>
+                                    <p class="m-0 mb-3">
+                                        <i class="bi bi-telephone-fill text-danger"></i>
+                                        <span class="fw-bold">Hotline2:</span>
+                                        <span class="text-danger" role="button">0944 871 886</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="none-visible-xl col-4">
+                    <h5 class="text-danger">THIÊN TRƯỜNG CHANEL</h5>
+                    <div role="button">
+                        <a href="https://www.youtube.com/watch?v=_rOFf0lEutw" rel="nofollow">
+                            <img class="img-fluid" src="../BaiTapLon_WithBootstrap5/img/cong-ty-the-thao-thien-truong.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row mt-4">
+                <div class="col-xl-6">
+                    <h6 class="fw-bolder mb-4">DỤNG CỤ THỂ THAO THIÊN TRƯỜNG SPORT</h6>
+                    <p class="shop-info"><b>Thiên Trường Sport</b> là đơn vị chuyên nhập khẩu, phân phối, bán buôn, bán lẻ
+                        <b>dụng vụ thể dục thể thao</b> và thể hình uy tín nhất tại Việt Nam. Toàn bộ sản phẩm
+                        do Thiên Trường cung cấp đều đảm bảo chính hãng, thông tin và giá
+                        <b>bán dụng cụ thể thao</b> được niêm yết, đảm bảo quyền lợi của Quý Khách hàng.
+                    </p>
+                    <div class="fw-normal">
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span>208D Lê Trọng Tấn, Thanh Xuân, Hà Nội</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-danger" role="button">0243 566 7337</span>
+                        </p>
+                        <p class="m-0 mb-3">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="email fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="fw-bolder mb-4">VỀ CHÚNG TÔI</h6>
+                            <p class="shop-info m-1"><a href="../BaiTapLon_WithBootstrap5/html/gioithieu.html" class="footer-link text-decoration-none">Giới thiệu</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Hệ thống đại lý</a></p>
+                            <p class="shop-info m-1"><a href="../BaiTapLon_WithBootstrap5/html/van-chuyen-thanh-toan.html" class="footer-link text-decoration-none">Vận chuyển & Thanh toán</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Phương thức thanh toán</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chính sách bảo hành</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chính sách đổi trả</a></p>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-bolder mb-4">SẢN PHẨM</h6>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Ghế tập tạ</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Giàn tạ đa năng</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Ghế tập bụng</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Bao cát đấm bốc</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Bàn bóng bàn</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Máy tập chân</a></p>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-bolder mb-4">KIẾN THỨC</h6>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Hít đất đúng cách</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Cách tập hít xà đơn</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Tập Gym giảm cân</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chạy bộ giảm cân</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Nhảy dây giảm cân</a></p>
+                            <p class="shop-info m-1"><a href="" class="footer-link text-decoration-none">Chiều cao lưới bóng chuyền</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="left-contact position-fixed">
+        <div class="messenger fs-2 text-white d-flex justify-content-center align-content-center rounded-circle"  data-bs-toggle="tooltip" data-bs-placement="top" title="Nhắn tin cho chúng tôi qua Facebook">
+            <i class="bi bi-messenger"></i>
+        </div>
+        <div class="geo-alt fs-2 text-white bg-info d-flex justify-content-center align-content-center rounded-circle mt-3"  data-bs-toggle="tooltip" data-bs-placement="top" title="Liên hệ">
+            <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="scroll-to-top fs-5 text-white d-flex justify-content-center align-items-center rounded-circle mt-3" role="button">
+            <i class="bi bi-caret-up-fill m-0 p-0 position-absolute"></i>
+            <span class="m-0 p-0 position-absolute">TOP</span>
+        </div>
+    </div>
+    <div class="gray-background z-2">
+    </div>  
+    <div class="he-thong-cua-hang position-fixed z-3 bg-white">
+        <h3 class="text-center py-4 border-bottom text-danger">DANH SÁCH CỬA HÀNG THỂ THAO THIÊN TRƯỜNG 
+            <div class="close-btn-he-thong-cua-hang rounded-circle m-0 p-0 btn btn-light text-dark" role="button"><span>x</span></div>
+        </h3>
+        <div class="row m-0 p-0">
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../BaiTapLon_WithBootstrap5/img/thien-truong-ha-noi.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold">Hà Nội</h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">208D Lê Trọng Tấn, Thanh Xuân</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0243 566 7337</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../BaiTapLon_WithBootstrap5/img/thien-truong-tphcm.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold">Tp. Hồ Chí Minh</h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">323 Trần Văn Kiểu, Quận 6</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0286 290 1232</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0">
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../BaiTapLon_WithBootstrap5/img/thien-truong-da-nang.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold"></h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">657 Trần Cao Vân, Quận Thanh Khê</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">02363 622 777</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../BaiTapLon_WithBootstrap5/img/thien-truong-nam-dinh.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold">Nam Định</h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">522 Trần Hưng Đạo, P Lộc Vương</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0987 833 956</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0">
+            <div class="col-6 border-bottom py-2 my-2 ms-0 ps-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 ms-0">
+                        <img class="w-100" src="../BaiTapLon_WithBootstrap5/img/thien-truong-sport-hai-phong-1.jpg" alt="">
+                    </div>
+                    <div class="col-auto fw-normal fs-6">
+                        <h6 class="fw-bold"></h6>
+                        <p class="m-0">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span class="text-secondary">238 Hàng Kênh, Quận Lê Chân</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-telephone-fill text-danger"></i>
+                            <span class="text-secondary" role="button">0968 887 488</span>
+                        </p>
+                        <p class="m-0">
+                            <i class="bi bi-envelope text-danger"></i>
+                            <span class="text-secondary fs-6" role="button">info@thethaothientruong.vn</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tim-kiem position-fixed z-3">
+        <div class="tim-kiem-close-btn position-absolute">
+            <span class="">x</span>
+        </div>
+        <div class="floating-search-bar input-group">
+            <input type="text" class="border-0 px-2" placeholder="Từ khóa tìm kiếm...">
+            <button class="text-danger border-0 px-2">
+                <i class="bi bi-search"></i>
+                Tìm kiếm
+            </button>
+        </div>
+    </div>
+</body>
+</html>
