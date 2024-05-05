@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $(".item").click(function() {
-        url = "https://nhnn3106.github.io/BaiTapLon_WithBootstrap5/html/san-pham.html";
+        url = "http://127.0.0.1:5500/BaiTapLon_WithBootstrap5/html/san-pham.html";
         $(location ).attr("href", url);
     })
 })

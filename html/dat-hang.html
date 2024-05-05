@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặt hàng</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../Bootstrap5/css/bootstrap.min.css">
     <script src="../Bootstrap5/js/bootstrap.bundle.min.js"></script>
     <script src="../jquery-3.7.1/jquery.js"></script>
@@ -507,16 +507,18 @@
             <h6 class="fw-bold">THÔNG TIN KHÁCH HÀNG</h6>
             <script>
                 $(document).ready(function() {
-                    var HoTenModel = /(^[A-Z]{1})([a-z]+)(\s[A-Z]{1}([a-z]*))*$/;
+                    var HoTenModel = /^[A-ZÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ][a-zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]*(?:[ ][A-ZÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ][a-zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]*)*$/;
                     var SDTModel = /^[0-9]{3,15}$/;
                     var mauEmail = /^[a-z0-9]+@gmail[/.]com/;
-                    var mauDC = /^[A-Za-z0-9-_, ]{3,15}$/;
+                    var mauDC = /^[A-ZÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐa-zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ0-9-_, ]+$/;
                     $("#txtHoTen").blur(function() {
                         if($("#txtHoTen").val() == "" || $("#txtHoTen").val() == null) {
                             $("#tbHoTen").text("Chưa nhập họ tên");
+                            return;
                         }
                         else if(HoTenModel.test($("#txtHoTen").val()) == false) {
                             $("#tbHoTen").text("Họ tên chỉ có thể chứa ký tự không dấu và dấu cách");
+                            return;
                         }
                         else {
                             $("#tbHoTen").text("");
@@ -525,6 +527,7 @@
                     $("#txtDT").blur(function() {
                         if(SDTModel.test($("#txtDT").val()) == "") {
                             $("#tbDT").text("Bắt buộc nhập số điện thoại!");
+                            return;
                         }
                         else 
                         if(SDTModel.test($("#txtDT").val()) == true) {
@@ -532,6 +535,7 @@
                         }
                         else {
                             $("#tbDT").text("Số điện thoại chỉ chứa số từ 3-15 chữ số");
+                            return;
                         }
                     })
                     $("#txtEmail").blur(function() {
@@ -540,20 +544,24 @@
                         }
                         else {
                             $("#tbEmail").text("Địa chỉ email phải có đuôi gmail.com");
+                            return;
                         }
                     })
                     $("#txtDC").blur(function() {
                         if ($("#txtDC").val() == "") {
                             $("#tbDC").text("Bắt buộc nhập");
+                            return;
                         } else if (mauDC.test($("#txtDC").val()) == true) {
                             $("#tbDC").text("");
                         } else {
                             $("#tbDC").text("Địa chỉ không hợp lệ");
+                            return;
                         }
                     })
                     $("#txtTP").change(function() {
                         if($("#txtTP").children("option:checked").text() == "Tỉnh / thành phố" ) {
                             $("#tbTP").text("Bắt buộc chọn tỉnh, thành phố");
+                            return;
                         } else {
                             $("#tbTP").text("");
                         }
@@ -561,12 +569,40 @@
                     $("#txtQuan").change(function() {
                         if($("#txtQuan").children("option:checked").text() == "Quận / huyện") {
                             $("#tbQuan").text("Bắt buộc chọn quận, huyện");
+                            return;
                         } else {
                             $("#tbQuan").text("");
                         }
                     })
                     $("#dat-hang-btn").click(function() {
-                        
+                        if($("#txtHoTen").val() == "" || $("#txtHoTen").val() == null) {
+                            return;
+                        }
+                        else if(HoTenModel.test($("#txtHoTen").val()) == false) {
+                            return;
+                        } else if(SDTModel.test($("#txtDT").val()) == "") {
+                            return;
+                        }
+                        else if(SDTModel.test($("#txtDT").val()) == false){
+                            return;
+                        }
+                        else if($("#txtEmail").val() != "" && mauEmail.test($("#txtEmail").val()) != true){
+                            return;
+                        }
+                        else if($("#txtDC").val() == "") {
+                            return;
+                        }
+                        else if (mauDC.test($("#txtDC").val()) != true) {
+                            return;
+                        }
+                        else if($("#txtTP").children("option:checked").text() == "Tỉnh / thành phố" ) {
+                            return;
+                        }
+                        else if($("#txtQuan").children("option:checked").text() == "Quận / huyện") {
+                            return;
+                        }
+                            alert("Đã đặt hàng thành công!");
+
                     })
     
                 })
