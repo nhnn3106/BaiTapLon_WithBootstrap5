@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $(".item").click(function() {
-        url = "../html/san-pham.html";
+        url = "../BaiTapLon_WithBootstrap5/html/san-pham.html";
         $(location ).attr("href", url);
     })
 })
